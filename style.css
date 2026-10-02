@@ -46,16 +46,7 @@ li {
   text-decoration: underline;
   margin-left: 5px;
 }
-.promo-bar__close-btn {
-  position: absolute;
-  right: 40px;
-  border: none;
-  background: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  translate: Y (-50px);
-}
+
 /* Hat */
 .header {
   padding: 20px 40px;
@@ -119,7 +110,7 @@ input {
   font-size: 16px;
 }
 
-.header__actions-actions {
+.header__actions actions {
   background-color: #fff;
   width: 68px;
   height: 24px;
@@ -129,11 +120,11 @@ input {
 }
 
 /* 1 Page hero*/
-.section-hero {
+.hero {
   font-family: "Satoshi", sans-serif;
   width: 100%;
   height: 663px;
-  background-image: url(./images/hero-boss.png);
+  background-image: url(./images/hero.png);
   padding-left: 170px;
 }
 
@@ -147,14 +138,13 @@ input {
   top: 220px;
   left: 1255px;
 }
-.hero__text {
+.container__info {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-top: 103px;
-  
 }
-.hero__text p {
+.container__info p {
   width: 545px;
   height: 33px;
   font-size: 16px;
@@ -163,7 +153,7 @@ input {
   opacity: 60%;
   line-height: 22px;
 }
-.hero__text h1 {
+.container__info h1 {
   width: 577px;
   height: 173px;
   font-weight: 700;
@@ -171,7 +161,7 @@ input {
   line-height: 64px;
   color: #000000;
 }
-.hero__text button {
+.container__info button {
   width: 210px;
   height: 52px;
   border-radius: 62px;
@@ -183,16 +173,16 @@ input {
   font-weight: 500;
   cursor: pointer;
 }
-.hero-static {
+.container-static {
   gap: 32px;
   padding-top: 48px;
   display: flex;
 }
-.hero-static h2 {
+.container-static h2 {
   font-weight: 700;
   font-size: 40px;
 }
-.hero-static p {
+.container-static p {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -200,7 +190,7 @@ input {
   opacity: 60%;
 }
 /*independent element*/
-.section-brends {
+.brends {
   background: #000;
   display: flex;
   align-items: center;
@@ -210,7 +200,7 @@ input {
   justify-content: center;
 }
 /*section two*/
-.section-catalog {
+.catalog {
   margin: 0 auto;
   width: 1260px;
   height: 700px;
@@ -227,7 +217,7 @@ input {
   height: 298px;
 }
 /* section two */
-.section-catalog__h2 {
+.catalog__title {
   padding-bottom: 55px;
   display: flex;
   justify-content: center;
@@ -239,7 +229,7 @@ input {
   margin: 0 auto;
   padding: 0 20px;
 }
-.section-catalog {
+.catalog {
   padding: 70px 0;
 }
 .section-title {
@@ -250,18 +240,18 @@ input {
   margin-bottom: 55px;
   letter-spacing: 1px;
 }
-.product-card {
+.article-product--card {
   display: flex;
   flex-direction: column;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.product-card:hover {
+.article-product--card:hover {
   transform: translateY(-5px);
 }
 
-.products-grid {
+.container-products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -293,21 +283,21 @@ input {
   font-width: 700px;
   line-height: 1.2;
 }
-.product-rating {
+.container-product--rating {
   display: flex;
   align-items: center;
   gap: 13px;
 }
-.stars {
+.container-product-stars--cart {
   display: flex;
   gap: 4px;
   color: #ffc633;
 }
-.stars svg {
+.container-product-stars--cart svg {
   width: 18px;
   height: 18px;
 }
-.rating-value {
+.container-rating {
   font-size: 14px;
   font-weight: 400;
   color: #000000;
@@ -362,11 +352,11 @@ input {
   margin: 0 auto;
 }
 /* section four */
-.section-dress_style {
+.dress_style {
   font-family: "Satoshi", sans-serif;
   padding-top: 80px;
 }
-.section-dress_style__container {
+.dress_style__container {
   width: 100%;
   max-width: 1240px;
   height: 866px;
@@ -375,7 +365,7 @@ input {
   margin: 0 auto;
   padding: 60px 40px;
 }
-.section-dress_style__h2 {
+.dress_style__title {
   padding-bottom: 120px;
   margin: 0 auto;
   width: 687px;
@@ -385,22 +375,22 @@ input {
   letter-spacing: 1px;
   color: #000;
 }
-.section-dress__grid {
+.dress-style--cart {
   width: 1111px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
-.Casual-Formal {
+.container-casual_formal {
   display: flex;
   gap: 20px;
 }
-.Party-Gym {
+.container-party_gym {
   display: flex;
   gap: 20px;
 }
-.section-dress_style img {
+.dress_style img {
   border-radius: 20px;
   height: 289px;
   background-color: #e0e0e0;
@@ -408,7 +398,7 @@ input {
   transition: transform 0.3s ease;
   overflow: hidden;
 }
-.style-cart__Formal img {
+.style-cart__formal img {
   position: absolute;
   background-image: url(./images.section4/Formal.svg);
 }
@@ -423,7 +413,7 @@ input {
   z-index: 1;
 }
 /* section reviews*/
-.reviews-section {
+.reviews {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -471,7 +461,7 @@ input {
 }
 
 /* Reviews- section*/
-.reviews-section {
+.reviews {
   width: 100%;
   height: 100%;
   font-family: "Satoshi", sans-serif;
@@ -510,7 +500,7 @@ input {
   justify-content: space-between;
   align-items: center;
 }
-.coment {
+.reviews-main__info {
   width: 400px;
   height: 239px;
   border: solid #0000001a;
@@ -519,19 +509,19 @@ input {
   gap: 15px;
 }
 
-.coment p {
+.reviews-main__info p {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #00000099;
   opacity: 60%;
 }
-.coment h3 {
+.reviews-main__info h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 22px;
 }
-.check-mark {
+.reviews-main__author {
   display: flex;
 }
 /* Black element */
@@ -552,19 +542,19 @@ input {
   font-size: 40px;
   line-height: 45px;
 }
-.subscribe__form {
+.subscribe-form {
   width: 35%;
   height: 109px;
   font-family: "Satoshi", sans-serif;
 }
-.subscribe__field {
+.subscribe-text {
   background: #fff;
   border-radius: 62px;
   height: 48px;
   margin-bottom: 14px;
   padding: 12px 10px 14px 52px;
 }
-.subscribe__form button {
+.subscribe-form button {
   width: 100%;
   height: 46px;
   border-radius: 20px;
@@ -897,4 +887,7 @@ h4 {
 }
 .card__rate span {
   padding-left: 4px;
+}
+@media(max-width:440px){
+  
 }
