@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.co</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=integral-cf@400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Black stripe -->
+    <div class="promo-bar__container">
+      <p class="promo-bar__text">
+        Sign up and get 20% off to your first order.
+        <a href="#" class="promo-bar__link">Sign Up Now</a>
+      </p>
+    </div>
+    <header class="header">
+      <div class="header-container">
+        <button
+          class="header__burger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__inner">
+          <a class="logo" href="./index.html">
+            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+          </a>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li>
+              <a href="./shop.html" class="header__menu-link"
+                >Shop <img src="./images/arrowButtom.svg" alt=""
+              /></a>
+            </li>
+            <li><a href="#" class="header__menu-link">On Sale</a></li>
+            <li><a href="#" class="header__menu-link">New Arrivals</a></li>
+            <li><a href="#" class="header__menu-link">Brands</a></li>
+          </ul>
+        </nav>
+        <div class="header__tools">
+          <div class="search-bar__container">
+            <form action="#" class="search-bar">
+              <div class="search-bar__img">
+                <img src="./images/magnifer.svg" alt="magnifier" />
+                <input
+                  class="search-bar__input"
+                  type="search"
+                  placeholder="Search for products..."
+                />
+              </div>
+            </form>
+          </div>
+          <div class="header__actions">
+            <a
+              href="./cart.html"
+              class="actions__btn actions__btn_cart"
+              aria-label="Cart"
+            >
+              <img src="./images/case.svg" alt="" />
+            </a>
+            <a
+              href="#"
+              class="actions__btn actions__btn_profile"
+              aria-label="Profile"
+              ><img src="./images/profile.svg" alt="profile" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- section onе-->
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <div class="container__info">
+              <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+              <p>
+                Browse through our diverse range of meticulously crafted
+                garments, designed to bring out your individuality and cater to
+                your sense of style.
+              </p>
+              <a href="./shop.html" class="hero__btn">Shop Now</a>
+            </div>
+            <div class="container-static">
+              <div class="container-static__text">
+                <h2>200+</h2>
+                <p>International Brands</p>
+              </div>
+              <img
+                src="./images/lineHero.svg"
+                alt=""
+                class="container-static__line"
+              />
+              <div class="container-static__text">
+                <h2>2,000+</h2>
+                <p>High-Quality Products</p>
+              </div>
+              <img
+                src="./images/lineTen.svg"
+                alt=""
+                class="container-static__line container-static__line--last"
+              />
+              <div class="container-static__text">
+                <h2>30,000+</h2>
+                <p>Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img
+              src="./images/hero.png"
+              alt="Models wearing SHOP.COoutfits"
+              class="hero__photo"
+            />
+            <img src="./images/stars.svg" alt="" class="small_star" />
+            <img src="./images/star.svg" alt="" class="big_star" />
+          </div>
+        </div>
+      </section>
+      <!--independent element-->
+      <section class="brends">
+        <img src="./images/versace.svg" alt="versace" />
+        <img src="./images/zara.svg" alt="Zara" />
+        <img src="./images/gucciLogo.svg" alt="gucci-logo" />
+        <img src="./images/prada.svg" alt="prada" />
+        <img src="./images/calvinKlein.svg" alt="Calvin.Klein" />
+      </section>
+      <!--section two-->
+      <section class="catalog">
+        <div class="section-catalog__container">
+          <div class="catalog__title">
+            <h2>NEW ARRIVALS</h2>
+          </div>
+          <div class="container-products">
+            <!-- card number 1 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img src="./images/blackT-shirt.svg" alt="black cloth" />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">T-SHIRT WITH TAPE DETAILS</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
+                  </div>
+                  <span class="container-rating">4.5/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$120</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number 2 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img src="./images/skinnyFitJeans.svg" alt="SKINNY FIT JEANS" />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">SKINNY FIT JEANS</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/3.5Stars.svg"
+                      alt="product-stars--cart 3.5"
+                    />
+                  </div>
+                  <span class="container-rating">3.5/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$240</span>
+                  <span class="old-price">$260</span>
+                  <span class="discont-badge">-20%</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number 3 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img src="./images/checkeredShirt.svg" alt="CHECKERED-SHIRT" />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">CHECKERED SHIRT</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
+                  </div>
+                  <span class="container-rating">4.5/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$180</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number 4 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img
+                  src="./images/sleeveStripedT-shirt.svg"
+                  alt="SLEEVE STRIPED T-SHIRT"
+                />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">SLEEVE STRIPED T-SHIRT</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
+                  </div>
+                  <span class="container-rating">4.5/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$130</span>
+                  <span class="old-price">$160</span>
+                  <span class="discont-badge">-30%</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="view-all__container">
+            <button class="view-all__btn">View All</button>
+          </div>
+        </div>
+      </section>
+      <!-- hr -->
+      <hr class="line" />
+      <!--section three-->
+      <section class="catalog">
+        <div class="section-catalog__container">
+          <div class="catalog__title">
+            <h2>TOP SELLING</h2>
+          </div>
+          <div class="container-products">
+            <!-- card number 1 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img
+                  src="./images/verticalStripedShirt.svg"
+                  alt="VERTICAL STRIPED SHIRT"
+                />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">VERTICAL STRIPED SHIRT</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/fiveStars.svg"
+                      alt="product-stars--cart 5"
+                    />
+                  </div>
+                  <span class="container-rating">5.0/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$212</span>
+                  <span class="old-price">$232</span>
+                  <span class="discont-badge">-20%</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number 2 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img
+                  src="./images/checkeredShirt.svg"
+                  alt="COURAGE GRAPHIC T-SHIRT"
+                />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">COURAGE GRAPHIC T-SHIRT</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/fourStars.svg"
+                      alt="product-stars--cart 4.0"
+                    />
+                  </div>
+                  <span class="container-rating">4.0/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$145</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number 3 -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img
+                  src="./images/looseFitBermudaShorts.svg"
+                  alt="LOOSE FIT BERMUDA SHORTS"
+                />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">LOOSE FIT BERMUDA SHORTS</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/threeStars.svg"
+                      alt="product-stars--cart 3.0"
+                    />
+                  </div>
+                  <span class="container-rating">3.0/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$80</span>
+                </div>
+              </div>
+            </article>
+            <!-- card number four -->
+            <article class="article-product--card">
+              <div class="product__images">
+                <img
+                  src="./images/fadedSkinnyJeans.svg"
+                  alt="FADED SKINNY JEANS"
+                />
+              </div>
+              <div class="container-product--info">
+                <h3 class="product-title">FADED SKINNY JEANS</h3>
+                <div class="container-product--rating">
+                  <div class="product-stars--cart">
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
+                  </div>
+                  <span class="container-rating">4.5/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$210</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="view-all__container">
+            <button class="view-all__btn">View All</button>
+          </div>
+        </div>
+      </section>
+      <!-- section four -->
+      <section class="dress_style">
+        <div class="dress_style__container">
+          <div class="dress_style__title">
+            <h2>BROWSE BY DRESS STYLE</h2>
+          </div>
+          <div class="dress-style--cart">
+            <!-- card number 1 -->
+            <div class="container-casual_formal">
+              <div class="style-cart__casual">
+                <h3 class="style-name">Casual</h3>
+                <img src="./images/casual.svg" alt="Casual" />
+              </div>
+              <!-- card number 2 -->
+              <div class="style-cart__formal">
+                <h3 class="style-name">Formal</h3>
+                <img src="./images/formal.svg" alt="Formal" />
+              </div>
+            </div>
+            <!-- card number 3 -->
+            <div class="container-party_gym">
+              <div class="style-cart__party">
+                <h3 class="style-name">Party</h3>
+                <img src="./images/party.svg" alt="Party" class="party-img" />
+              </div>
+              <!-- card number 4 -->
+              <div class="style-cart__gym">
+                <h3 class="style-name">Gym</h3>
+                <img src="./images/gym.svg" alt="Gym" class="gym-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- now section-->
+      <section class="reviews">
+        <div class="reviews-header">
+          <h2>OUR HAPPY CUSTOMERS</h2>
+          <div class="reviews-header__btn">
+            <button class="reviews-header__btn">
+              <img src="./images/leftArrow.svg" alt="left arrow" />
+            </button>
+            <button class="reviews-header__btn">
+              <img src="./images/arrow-right.svg" alt="arrow right" />
+            </button>
+          </div>
+        </div>
+        <!--main reviews-main__info-->
+        <div class="reviews-main">
+          <img src="./images/right.svg" alt="" />
+
+          <div class="reviews-main__info">
+            <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
+            <div class="reviews-main__author">
+              <h3>Sarah M.</h3>
+              <img src="./images/checkMark.svg" alt="check mark" />
+            </div>
+            <p>
+              "I'm blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece
+              I've bought has exceeded my expectations.”
+            </p>
+          </div>
+
+          <div class="reviews-main__info">
+            <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
+            <div class="reviews-main__author">
+              <h3>Alex K.</h3>
+              <img src="./images/checkMark.svg" alt="check mark" />
+            </div>
+            <p>
+              "Finding clothes that align with my personal style used to be a
+              challenge until I discovered Shop.co. The range of options they
+              offer is truly remarkable, catering to a variety of tastes and
+              occasions.”
+            </p>
+          </div>
+
+          <div class="reviews-main__info">
+            <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
+            <div class="reviews-main__author">
+              <h3>James L.</h3>
+              <img src="./images/checkMark.svg" alt="check mark" />
+            </div>
+            <p>
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+
+          <img src="./images/left.svg" alt="" />
+        </div>
+      </section>
+    </main>
+    <!--black-element-->
+    <section class="subscribe-home">
+      <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <form class="subscribe-form" action="#">
+        <div class="subscribe-text">
+          <img src="./images/email.svg" alt="" />
+          <input type="email" placeholder="Enter your email address" />
+        </div>
+        <button type="button" class="subscribe__btn">
+          Subscribe to Newsletter
+        </button>
+      </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer-home">
+      <div class="footer__top wrap">
+        <div class="footer__about">
+          <h3>SHOP.CO</h3>
+          <p>
+            We have clothes that suits your style and which you’re proud to
+            wear. From women to men.
+          </p>
+          <div class="footer__social">
+            <img src="./images/tviter.svg" alt="twitter" />
+            <img src="./images/fasbook.svg" alt="facebook" />
+            <img src="./images/instogram.svg" alt="instagram" />
+            <img src="./images/gitnab.svg" alt="github" />
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>COMPANY</h4>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Works</a>
+          <a href="#">Career</a>
+        </div>
+        <div class="footer__col">
+          <h4>HELP</h4>
+          <a href="#">Customer Support</a>
+          <a href="#">Delivery Details</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__col">
+          <h4>FAQ</h4>
+          <a href="#">Account</a>
+          <a href="#">Manage Deliveries</a>
+          <a href="#">Orders</a>
+          <a href="#">Payments</a>
+        </div>
+        <div class="footer__col">
+          <h4>RESOURCES</h4>
+          <a href="#">Free eBooks</a>
+          <a href="#">Development Tutorial</a>
+          <a href="#">How to - Blog</a>
+          <a href="#">Youtube Playlist</a>
+        </div>
+      </div>
+      <div class="footer__bottom wrap">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="footer__pays">
+          <img src="./images/visa.svg" alt="visa" />
+          <img src="./images/numberTwo.svg" alt="mastercard" />
+          <img src="./images/payPal.svg" alt="paypal" />
+          <img src="./images/payApple.svg" alt="apple pay" />
+          <img src="./images/payGoogle.svg" alt="google pay" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+

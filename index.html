@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Shop.co</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="./User.js"></script>
-    <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
@@ -25,16 +25,19 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="container header__inner">
-          <a class="logo" href="#"></a>
-          <img src="images/shop.co.svg" alt="SHOP.CO" />
+          <a class="logo" href="./index.html">
+            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+          </a>
         </div>
         <!-- header__menu -->
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li>
-              <a href="./index.html" class="header__menu-link">Shop <img src="./images/figni.svg" alt=""/></a>
+              <a href="./shop.html" class="header__menu-link"
+                >Shop <img src="./images/arrowButtom.svg" alt=""
+              /></a>
             </li>
-            <li><a href="./On-sale.html" class="header__menu-link">On Sale</a></li>
+            <li><a href="#" class="header__menu-link">On Sale</a></li>
             <li></li>
             <a href="#" class="header__menu-link">New Arrivals</a>
             <li><a href="#" class="header__menu-link">Brands</a></li>
@@ -54,8 +57,12 @@
           </form>
         </div>
         <!--The basket and profile icons-->
-        <div class="header__actions actions">
-          <a href="#" class="actions__btn actions__btn_cart" aria-label="Cart">
+        <div class="header__actions">
+          <a
+            href="./cart.html"
+            class="actions__btn actions__btn_cart"
+            aria-label="Cart"
+          >
             <img src="./images/case.svg" alt="" />
           </a>
           <a
@@ -68,40 +75,39 @@
       </div>
     </header>
     <!-- section onе-->
-     <!--Это пишет влад не ИИ тут должно быть section-->
     <main>
       <section class="hero">
         <div class="hero__container">
-        <div class="container__info">
-          <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-          <p>
-            Browse through our diverse range of meticulously crafted garments,
-            designed to bring out your individuality and cater to your sense of
-            style.
-          </p>
-          <button href="#" class="hero__btn">Shop Now</button>
-        </div>
-        <div class="container-product-stars--cart">
-          <img src="./images/stars.svg" alt="star" class="small_star" />
-          <img src="./images/star.svg" alt="star" class="big_star" />
-        </div>
-        <div class="container-static">
-          <div class="container-static__text">
-            <h2>200+</h2>
-            <p>International Brands</p>
+          <div class="container__info">
+            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p>
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
+            </p>
+            <button href="#" class="hero__btn">Shop Now</button>
           </div>
-          <img src="./images/Line-10.svg" alt="" />
-          <div class="container-static__text">
-            <h2>2,000+</h2>
-            <p>High-Quality Products</p>
+          <div class="container-product-stars--cart">
+            <img src="./images/stars.svg" alt="star" class="small_star" />
+            <img src="./images/star.svg" alt="star" class="big_star" />
           </div>
-          <img src="./images/lineTen.svg" alt="" />
-          <div class="container-static__text">
-            <h2>30,000+</h2>
-            <p>Happy Customers</p>
+          <div class="container-static">
+            <div class="container-static__text">
+              <h2>200+</h2>
+              <p>International Brands</p>
+            </div>
+            <img src="./images/lineHero.svg" alt="" />
+            <div class="container-static__text">
+              <h2>2,000+</h2>
+              <p>High-Quality Products</p>
+            </div>
+            <img src="./images/lineTen.svg" alt="" />
+            <div class="container-static__text">
+              <h2>30,000+</h2>
+              <p>Happy Customers</p>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <!--independent element-->
       <section class="brends">
@@ -121,13 +127,16 @@
             <!-- card number 1 -->
             <article class="article-product--card">
               <div class="product__images">
-                <img src="./images/blackT-shirt.svg" alt="black T-shirt" />
+                <img src="./images/blackT-shirt.svg" alt="black cloth" />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">T-SHIRT WITH TAPE DETAILS</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/starsCart.svg" alt="product-stars--cart 4.5" />
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
                   </div>
                   <span class="container-rating">4.5/5</span>
                 </div>
@@ -139,16 +148,16 @@
             <!-- card number 2 -->
             <article class="article-product--card">
               <div class="product__images">
-                <img
-                  src="./images/skinnyFitJeans.svg"
-                  alt="SKINNY FIT JEANS"
-                />
+                <img src="./images/skinnyFitJeans.svg" alt="SKINNY FIT JEANS" />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">SKINNY FIT JEANS</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/3.5Stars.svg" alt="product-stars--cart 3.5" />
+                    <img
+                      src="./images/3.5Stars.svg"
+                      alt="product-stars--cart 3.5"
+                    />
                   </div>
                   <span class="container-rating">3.5/5</span>
                 </div>
@@ -162,16 +171,16 @@
             <!-- card number 3 -->
             <article class="article-product--card">
               <div class="product__images">
-                <img
-                  src="./images/checkeredShirt.svg"
-                  alt="CHECKERED-SHIRT"
-                />
+                <img src="./images/checkeredShirt.svg" alt="CHECKERED-SHIRT" />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">CHECKERED SHIRT</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/starsCart.svg" alt="product-stars--cart 4.5" />
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
                   </div>
                   <span class="container-rating">4.5/5</span>
                 </div>
@@ -192,7 +201,10 @@
                 <h3 class="product-title">SLEEVE STRIPED T-SHIRT</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/starsCart.svg" alt="product-stars--cart 4.5" />
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
                   </div>
                   <span class="container-rating">4.5/5</span>
                 </div>
@@ -230,7 +242,10 @@
                 <h3 class="product-title">VERTICAL STRIPED SHIRT</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/fiveStars.svg" alt="product-stars--cart 5" />
+                    <img
+                      src="./images/fiveStars.svg"
+                      alt="product-stars--cart 5"
+                    />
                   </div>
                   <span class="container-rating">5.0/5</span>
                 </div>
@@ -253,7 +268,10 @@
                 <h3 class="product-title">COURAGE GRAPHIC T-SHIRT</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/fourStars.svg" alt="product-stars--cart 4.0" />
+                    <img
+                      src="./images/fourStars.svg"
+                      alt="product-stars--cart 4.0"
+                    />
                   </div>
                   <span class="container-rating">4.0/5</span>
                 </div>
@@ -274,7 +292,10 @@
                 <h3 class="product-title">LOOSE FIT BERMUDA SHORTS</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/threeStars.svg" alt="product-stars--cart 3.0" />
+                    <img
+                      src="./images/threeStars.svg"
+                      alt="product-stars--cart 3.0"
+                    />
                   </div>
                   <span class="container-rating">3.0/5</span>
                 </div>
@@ -295,7 +316,10 @@
                 <h3 class="product-title">FADED SKINNY JEANS</h3>
                 <div class="container-product--rating">
                   <div class="product-stars--cart">
-                    <img src="./images/starsCart.svg" alt="product-stars--cart 4.5" />
+                    <img
+                      src="./images/starsCart.svg"
+                      alt="product-stars--cart 4.5"
+                    />
                   </div>
                   <span class="container-rating">4.5/5</span>
                 </div>
@@ -333,12 +357,12 @@
             <div class="container-party_gym">
               <div class="style-cart__party">
                 <h3 class="style-name">Party</h3>
-                <img src="./images/party.svg" alt="Party" />
+                <img src="./images/party.svg" alt="Party" class="party-img" />
               </div>
               <!-- card number 4 -->
               <div class="style-cart__gym">
                 <h3 class="style-name">Gym</h3>
-                <img src="./images/gym.svg" alt="Gym" />
+                <img src="./images/gym.svg" alt="Gym" class="gym-img" />
               </div>
             </div>
           </div>
@@ -350,16 +374,10 @@
           <h2>OUR HAPPY CUSTOMERS</h2>
           <div class="reviews-header__btn">
             <button class="reviews-header__btn">
-              <img
-                src="./images/leftArrow.svg"
-                alt="left arrow"
-              />
+              <img src="./images/leftArrow.svg" alt="left arrow" />
             </button>
             <button class="reviews-header__btn">
-              <img
-                src="./images/arrow-right.svg"
-                alt="arrow right"
-              />
+              <img src="./images/arrow-right.svg" alt="arrow right" />
             </button>
           </div>
         </div>
@@ -371,10 +389,7 @@
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>Sarah M.</h3>
-              <img
-                src="./images/checkMark.svg"
-                alt="check mark"
-              />
+              <img src="./images/checkMark.svg" alt="check mark" />
             </div>
             <p>
               "I'm blown away by the quality and style of the clothes I received
@@ -387,10 +402,7 @@
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>Alex K.</h3>
-              <img
-                src="./images/checkMark.svg"
-                alt="check mark"
-              />
+              <img src="./images/checkMark.svg" alt="check mark" />
             </div>
             <p>
               "Finding clothes that align with my personal style used to be a
@@ -404,10 +416,7 @@
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>James L.</h3>
-              <img
-                src="./images/checkMark.svg"
-                alt="check mark"
-              />
+              <img src="./images/checkMark.svg" alt="check mark" />
             </div>
             <p>
               "As someone who's always on the lookout for unique fashion pieces,
@@ -422,19 +431,20 @@
       </section>
     </main>
     <!--black-element-->
-    <section class="subscribe">
+    <section class="subscribe-home">
       <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
       <form class="subscribe-form" action="#">
         <div class="subscribe-text">
           <img src="./images/email.svg" alt="" />
           <input type="email" placeholder="Enter your email address" />
         </div>
-        <button type="button">Subscribe to Newsletter</button>
+        <button type="button" class="subscribe__btn">
+          Subscribe to Newsletter
+        </button>
       </form>
     </section>
-    </div>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer-home">
       <div class="footer__top wrap">
         <div class="footer__about">
           <h3>SHOP.CO</h3>

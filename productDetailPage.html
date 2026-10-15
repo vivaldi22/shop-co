@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="../css/productPage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Black stripe -->
+    <div class="promo-bar__container">
+      <p class="promo-bar__text">
+        Sign up and get 20% off to your first order.
+        <a href="#" class="promo-bar__link">Sign Up Now</a>
+      </p>
+    </div>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="container header__inner">
+          <a class="logo" href="./index.html">
+            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+          </a>
+        </div>
+        <!-- header__menu -->
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li>
+              <a href="./shop.html" class="header__menu-link"
+                >Shop <img src="./images/arrowButtom.svg" alt=""
+              /></a>
+            </li>
+            <li><a href="#" class="header__menu-link">On Sale</a></li>
+            <li></li>
+            <a href="#" class="header__menu-link">New Arrivals</a>
+            <li><a href="#" class="header__menu-link">Brands</a></li>
+          </ul>
+        </nav>
+        <!-- search bar -->
+        <div class="search-bar__container">
+          <form action="#" class="search-bar">
+            <div class="search-bar__img">
+              <img src="./images/magnifer.svg" alt="magnifier" />
+              <input
+                class="search-bar__input"
+                type="search"
+                placeholder="Search for products..."
+              />
+            </div>
+          </form>
+        </div>
+        <!--The basket and profile icons-->
+        <div class="header__actions">
+          <a
+            href="./cart.html"
+            class="actions__btn actions__btn_cart"
+            aria-label="Cart"
+          >
+            <img src="./images/case.svg" alt="" />
+          </a>
+          <a
+            href="#"
+            class="actions__btn actions__btn_profile"
+            aria-label="Profile"
+            ><img src="./images/profile.svg" alt="profile" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <hr class="link-cart" />
+    <div class="navigation">
+      <div class="navigation-info">
+        <a href="./index.html">Home</a>
+        <img src="./images/arrowRightHome.svg" alt="" />
+      </div>
+      <div class="navigation-info">
+        <a href="./shop.html">Shop</a>
+        <img src="./images/arrowRightHome.svg" alt="" />
+      </div>
+      <div class="navigation-info">
+        <a href="#">Men</a>
+        <img src="./images/arrowRightHome.svg" alt="" />
+      </div>
+      <span>T-shirts</span>
+    </div>
+    <main class="main">
+      <section class="cloth">
+        <div class="cloth__container">
+          <div class="cloth__container-img">
+            <img
+              src="./images/greenT-shirtOne.svg"
+              alt=""
+              class="img__transform"
+            />
+            <img
+              src="./images/greenT-shirtTwo.svg"
+              alt=""
+              class="img__transform"
+            />
+            <img
+              src="./images/greenT-shirtThee.svg"
+              alt=""
+              class="img__transform"
+            />
+          </div>
+          <div class="cloth__container-hero--img">
+            <img src="./images/greenT-shirtHero.svg" alt="" />
+          </div>
+
+          <div class="container-info">
+            <h1>One Life Graphic T-shirt</h1>
+            <div class="container-info--static">
+              <img src="./images/starsCart.svg" alt="" />
+              <span class="rating">4.5/5</span>
+            </div>
+            <div class="product-page">
+              <span class="current-page">$260</span>
+              <span class="old-page">$300</span>
+              <span class="discont-page">-40%</span>
+            </div>
+            <p>
+              This graphic cloth which is perfect for any occasion. Crafted from
+              a soft and breathable fabric, it offers superior comfort and
+              style.
+            </p>
+            <hr class="page__link" />
+            <p>Select Colors</p>
+            <div class="container-info__color">
+              <div class="container-info__color-purple"></div>
+              <div class="container-info__color-green"></div>
+              <div class="container-info__color-brown"></div>
+            </div>
+            <hr class="page__link" />
+            <p>Choose Size</p>
+            <div class="t-shirt-btn">
+              <button class="t-shirt-btn__small">Small</button>
+              <button class="t-shirt-btn__medium">Medium</button>
+              <button class="t-shirt-btn__large">Large</button>
+              <button class="t-shirt-btn__Xlarge">X-Large</button>
+            </div>
+            <hr class="page__link" />
+            <div class="cloth__footer">
+              <div class="quantily-selector">
+                <button class="quantily-selector__btn">-</button>
+                <span>1</span>
+                <button class="quantily-selector__btn">+</button>
+              </div>
+              <button class="cart-form">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-comment">
+        <div class="section-comment__container">
+          <div class="container-choice">
+            <p class="container-choice__p">Product Details</p>
+            <p class="container-choice__text">Rating & Reviews</p>
+            <p class="container-choice__p">FAQs</p>
+          </div>
+          <hr class="link" />
+          <hr class="link-active" />
+          <div class="container-title">
+            <div class="title-reviews">
+              <h3>All Reviews</h3>
+              <p>(451)</p>
+            </div>
+            <div class="container-filter">
+              <button class="container-filter__filter">
+                <img src="./images/filter.svg" alt="" />
+              </button>
+              <button class="container-filter__whiteImg">
+                Latest
+                <img src="./images/arrowButtom.svg" alt="" />
+              </button>
+              <button class="container-filter__btn">Write a Review</button>
+            </div>
+          </div>
+          <div class="section-comment__container-reviews">
+            <div class="container-reviews">
+              <!-- 1 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/starsCart.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Samantha D.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "I absolutely love this t-shirt! The design is unique and
+                    the fabric feels so comfortable. As a fellow designer, I
+                    appreciate the attention to detail. It's become my favorite
+                    go-to shirt."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 14, 2023
+                  </p>
+                </div>
+              </div>
+              <!-- 2 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/fourStars.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Alex M.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 15, 2023
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/3.5Stars.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Ethan R.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "This t-shirt is a must-have for anyone who appreciates good
+                    design. The minimalistic yet stylish pattern caught my eye,
+                    and the fit is perfect. I can see the designer's touch in
+                    every aspect of this shirt."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 16, 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block-reviews">
+              <!-- 4 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/starsCart.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Olivia P.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "As a UI/UX enthusiast, I value simplicity and
+                    functionality. This t-shirt not only represents those
+                    principles but also feels great to wear. It's evident that
+                    the designer poured their creativity into making this
+                    t-shirt stand out."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 17, 2023
+                  </p>
+                </div>
+              </div>
+
+              <!-- 5 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/starsCart.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Liam K.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "This t-shirt is a fusion of comfort and creativity. The
+                    fabric is soft, and the design speaks volumes about the
+                    designer's skill. It's like wearing a piece of art that
+                    reflects my passion for both design and fashion."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 18, 2023
+                  </p>
+                </div>
+              </div>
+
+              <!-- 6 cart-->
+              <div class="container__reviews">
+                <div class="container__reviews-header">
+                  <div class="container__reviews-header_img">
+                    <img src="./images/starsCart.svg" alt="" />
+                    <img src="./images/points.svg" alt="" />
+                  </div>
+                  <div class="container__reviews-header_name">
+                    <span>Ava H.</span
+                    ><img src="./images/checkMark.svg" alt="" />
+                  </div>
+                  <p class="container__reviews-header_p">
+                    "I'm not just wearing a t-shirt; I'm wearing a piece of
+                    design philosophy. The intricate details and thoughtful
+                    layout of the design make this shirt a conversation
+                    starter."
+                  </p>
+                  <p class="container__reviews-text">
+                    Posted on August 19, 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-reviews__btn">
+          <button>Load More Reviews</button>
+        </div>
+      </section>
+
+      <section class="cart">
+        <div class="cart__container">
+          <h2 class="cart__container-title">You might also like</h2>
+          <div class="block__cart">
+            <!-- 1 cart -->
+            <div class="cart__four">
+              <div class="card">
+                <img
+                  class="card__img"
+                  src="./images/polowith.svg"
+                  alt="Polo with Contrast Trims"
+                />
+                <h3 class="card__title">Polo with Contrast Trims</h3>
+                <div class="card__rate">
+                  <img src="./images/starsCart.svg" alt="4/5" />
+                  <span>4.0/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$212</span>
+                  <span class="old-price">$242</span>
+                  <span class="discont-badge">-20%</span>
+                </div>
+              </div>
+            </div>
+            <!-- 2 cart -->
+            <div class="cart__four">
+              <div class="card">
+                <img
+                  class="card__img"
+                  src="./images/gradientGraphicT-shirt.svg"
+                  alt="gradient cloth"
+                />
+                <h3 class="card__title">Gradient Graphic cloth</h3>
+                <div class="card__rate">
+                  <img src="./images/3.5Stars.svg" alt="3.5" />
+                  <span>3.5/5</span>
+                </div>
+                <span class="current-price">$145</span>
+              </div>
+            </div>
+            <!--  3 cart-->
+            <div class="cart__four">
+              <div class="card">
+                <img
+                  class="card__img"
+                  src="./images/poloWithTippingDetails.svg"
+                  alt="polo"
+                />
+                <h3 class="card__title">Polo with Tipping Details</h3>
+                <div class="card__rate">
+                  <img src="./images/starsCart.svg" alt="4.5" />
+                  <span>4.5/5</span>
+                </div>
+                <span class="current-price">$180</span>
+              </div>
+            </div>
+            <!-- 4 cart -->
+            <div class="cart__four">
+              <div class="card">
+                <img
+                  class="card__img"
+                  src="./images/blackStripedT-shirt.svg"
+                  alt="striped cloth"
+                />
+                <h3 class="card__title">Black Striped cloth</h3>
+                <div class="card__rate">
+                  <img src="./images/fiveStars.svg" alt="5.0" />
+                  <span>5.0/5</span>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">$120</span>
+                  <span class="old-price">$150</span>
+                  <span class="discont-badge">-30%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+        <form class="subscribe-form" action="#">
+          <div class="subscribe-text">
+            <img src="./images/email.svg" alt="" />
+            <input type="email" placeholder="Enter your email address" />
+          </div>
+          <button type="button" class="subscribe__btn">
+            Subscribe to Newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top wrap">
+        <div class="footer__about">
+          <h3>SHOP.CO</h3>
+          <p>
+            We have clothes that suits your style and which you’re proud to
+            wear. From women to men.
+          </p>
+          <div class="footer__social">
+            <img src="images/tviter.svg" alt="twitter" />
+            <img src="images/fasbook.svg" alt="facebook" />
+            <img src="images/instogram.svg" alt="instagram" />
+            <img src="images/gitnab.svg" alt="github" />
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>COMPANY</h4>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Works</a>
+          <a href="#">Career</a>
+        </div>
+        <div class="footer__col">
+          <h4>HELP</h4>
+          <a href="#">Customer Support</a>
+          <a href="#">Delivery Details</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__col">
+          <h4>FAQ</h4>
+          <a href="#">Account</a>
+          <a href="#">Manage Deliveries</a>
+          <a href="#">Orders</a>
+          <a href="#">Payments</a>
+        </div>
+        <div class="footer__col">
+          <h4>RESOURCES</h4>
+          <a href="#">Free eBooks</a>
+          <a href="#">Development Tutorial</a>
+          <a href="#">How to - Blog</a>
+          <a href="#">Youtube Playlist</a>
+        </div>
+      </div>
+      <div class="footer__bottom wrap">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="footer__pays">
+          <img src="images/visa.svg" alt="visa" />
+          <img src="images/numberTwo.svg" alt="mastercard" />
+          <img src="images/payPal.svg" alt="paypal" />
+          <img src="images/payApple.svg" alt="apple pay" />
+          <img src="images/payGoogle.svg" alt="google pay" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

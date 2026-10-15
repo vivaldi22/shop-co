@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <title>cart</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Black stripe -->
+    <div class="promo-bar__container">
+      <p class="promo-bar__text">
+        Sign up and get 20% off to your first order.
+        <a href="#" class="promo-bar__link">Sign Up Now</a>
+      </p>
+    </div>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="container header__inner">
+         <a class="logo" href="./index.html">
+           <img src="./images/shop.co.svg" alt="SHOP.CO" />
+         </a>
+        </div>
+        <!-- header__menu -->
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li>
+              <a href="./shop.html" class="header__menu-link"
+                >Shop <img src="./images/arrowButtom.svg" alt=""
+              /></a>
+            </li>
+            <li><a href="#" class="header__menu-link">On Sale</a></li>
+            <li></li>
+            <a href="#" class="header__menu-link">New Arrivals</a>
+            <li><a href="#" class="header__menu-link">Brands</a></li>
+          </ul>
+        </nav>
+        <!-- search bar -->
+        <div class="search-bar__container">
+          <form action="#" class="search-bar">
+            <div class="search-bar__img">
+              <img src="./images/magnifer.svg" alt="magnifier" />
+              <input
+                class="search-bar__input"
+                type="search"
+                placeholder="Search for products..."
+              />
+            </div>
+          </form>
+        </div>
+        <!--The basket and profile icons-->
+        <div class="header__actions">
+          <a
+            href="./cart.html"
+            class="actions__btn actions__btn_cart"
+            aria-label="Cart"
+          >
+            <img src="./images/case.svg" alt="" />
+          </a>
+          <a
+            href="#"
+            class="actions__btn actions__btn_profile"
+            aria-label="Profile"
+            ><img src="./images/profile.svg" alt="profile" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <hr class="link-cart" />
+    <main class="main">
+      <div class="navigation">
+        <div class="navigation-info">
+          <div class="navigation-home">
+            <a href="./index.html">Home</a>
+            <img src="./images/arrowRightHome.svg" alt="" />
+          </div>
+          <a href="#" class="a">Cart</a>
+        </div>
+      </div>
+      <div class="title">
+        <h1><b> Your cart</b></h1>
+      </div>
+      <!-- section -->
+      <section class="cart">
+        <div class="cart__container">
+          <!-- 1 див-->
+          <div class="cart__container-products">
+            <div class="product__container">
+              <img class="product-img" src="./images/cirh1.svg" alt="" />
+              <div class="">
+                <div class="product__container-info">
+                  <h4>Gradient Graphic T-shirt</h4>
+                  <p>Size: <i> Large</i></p>
+                  <p>Color: <i>White</i></p>
+                  <span>$145</span>
+                </div>
+              </div>
+              <div class="product__container-quantity">
+                <img class="corzina-img" src="./images/corzina.svg" alt="" />
+                <div class="quantily-selector">
+                  <button class="quantily-selector__btn">-</button>
+                  <span>1</span>
+                  <button class="quantily-selector__btn">+</button>
+                </div>
+              </div>
+            </div>
+            <hr class="products-line" />
+            <div class="product__container">
+              <img class="product-img" src="./images/cith2.png" alt="" />
+              <div class="">
+                <div class="product__container-info">
+                  <h4>CHECKERED SHIRT</h4>
+                  <p>Size: <i> Medium</i></p>
+                  <p>Color: <i>Red</i></p>
+                  <span>$180</span>
+                </div>
+              </div>
+              <div class="product__container-quantity">
+                <img class="corzina-img" src="./images/corzina.svg" alt="" />
+                <div class="quantily-selector">
+                  <button class="quantily-selector__btn">-</button>
+                  <span>1</span>
+                  <button class="quantily-selector__btn">+</button>
+                </div>
+              </div>
+            </div>
+            <hr class="products-line" />
+            <div class="product__container">
+              <img class="product-img" src="./images/cith3.svg" alt="" />
+              <div class="">
+                <div class="product__container-info">
+                  <h4>SKINNY FIT JEANS</h4>
+                  <p>Size: <i> Large</i></p>
+                  <p>Color: <i>Blue</i></p>
+                  <span>$240</span>
+                </div>
+              </div>
+              <div class="product__container-quantity">
+                <img class="corzina-img" src="./images/corzina.svg" alt="" />
+                <div class="quantily-selector">
+                  <button class="quantily-selector__btn">-</button>
+                  <span>1</span>
+                  <button class="quantily-selector__btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 див-->
+          <div class="price">
+            <h3>Order Summary</h3>
+            <div class="price__result">
+              <div class="price__result-product">
+                <p class="price__result-product--p">Subtotal</p>
+                <span class="prise__span">$565</span>
+              </div>
+              <div class="price__result-product">
+                <p class="price__result-product--p">Discount (-20%)</p>
+                <span class="prise113">-$113</span>
+              </div>
+              <div class="price__result-product">
+                <p class="price__result-product--p">Delivery Fee</p>
+                <span class="prise__span">$15</span>
+              </div>
+              <hr class="price__line" />
+              <div class="price__result-product">
+                <p class="price__p">Total</p>
+                <span class="prise__numberBig">$467</span>
+              </div>
+            </div>
+            <!-- search bar -->
+            <div class="container__form">
+                <div class="input-line">
+                  <img src="./images/page.svg" />
+                  <input
+                    class="input-line__input"
+                    type="search"
+                    placeholder="Add promo code"
+                  />
+                </div>
+              <button class="form__btn">Apply</button>
+            </div>
+
+            <button class="price__btn">
+              Go to Checkout <img src="./images/arrowWith.svg" alt="" />
+            </button>
+          </div>
+        </div>
+     <section class="subscribe">
+      <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <form class="subscribe-form" action="#">
+        <div class="subscribe-text">
+          <img src="./images/email.svg" alt="" />
+          <input type="email" placeholder="Enter your email address" />
+        </div>
+        <button type="button" class="subscribe__btn">Subscribe to Newsletter</button>
+      </form>
+     </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top wrap">
+        <div class="footer__about">
+          <h3>SHOP.CO</h3>
+          <p>
+            We have clothes that suits your style and which you’re proud to
+            wear. From women to men.
+          </p>
+          <div class="footer__social">
+            <img src="images/tviter.svg" alt="twitter" />
+            <img src="images/fasbook.svg" alt="facebook" />
+            <img src="images/instogram.svg" alt="instagram" />
+            <img src="images/gitnab.svg" alt="github" />
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>COMPANY</h4>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Works</a>
+          <a href="#">Career</a>
+        </div>
+        <div class="footer__col">
+          <h4>HELP</h4>
+          <a href="#">Customer Support</a>
+          <a href="#">Delivery Details</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__col">
+          <h4>FAQ</h4>
+          <a href="#">Account</a>
+          <a href="#">Manage Deliveries</a>
+          <a href="#">Orders</a>
+          <a href="#">Payments</a>
+        </div>
+        <div class="footer__col">
+          <h4>RESOURCES</h4>
+          <a href="#">Free eBooks</a>
+          <a href="#">Development Tutorial</a>
+          <a href="#">How to - Blog</a>
+          <a href="#">Youtube Playlist</a>
+        </div>
+      </div>
+      <div class="footer__bottom wrap">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="footer__pays">
+          <img src="images/visa.svg" alt="visa" />
+          <img src="images/numberTwo.svg" alt="mastercard" />
+          <img src="images/payPal.svg" alt="paypal" />
+          <img src="images/payApple.svg" alt="apple pay" />
+          <img src="images/payGoogle.svg" alt="google pay" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

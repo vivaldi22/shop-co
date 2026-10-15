@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Casual - SHOP.CO</title>
+    <title>Casual</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=integral-cf@400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/site.css" />
   </head>
   <body>
     <!-- Black stripe -->
@@ -22,20 +22,19 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="container header__inner">
-          <a class="logo" href="#"></a>
-          <img src="images/shop.co.svg" alt="SHOP.CO" />
+          <a class="logo" href="./index.html">
+            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+          </a>
         </div>
         <!-- header__menu -->
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li>
-              <a href="#" class="header__menu-link"
-                >Shop <img src="./images/figni.svg" alt=""
+              <a href="./shop.html" class="header__menu-link"
+                >Shop <img src="./images/arrowButtom.svg" alt=""
               /></a>
             </li>
-            <li>
-              <a href="./On-sale.html" class="header__menu-link">On Sale</a>
-            </li>
+            <li><a href="#" class="header__menu-link">On Sale</a></li>
             <li></li>
             <a href="#" class="header__menu-link">New Arrivals</a>
             <li><a href="#" class="header__menu-link">Brands</a></li>
@@ -47,7 +46,7 @@
             <div class="search-bar__img">
               <img src="./images/magnifer.svg" alt="magnifier" />
               <input
-                class="header-input"
+                class="search-bar__input"
                 type="search"
                 placeholder="Search for products..."
               />
@@ -55,8 +54,12 @@
           </form>
         </div>
         <!--The basket and profile icons-->
-        <div class="header__actions actions">
-          <a href="#" class="actions__btn actions__btn_cart" aria-label="Cart">
+        <div class="header__actions">
+          <a
+            href="./cart.html"
+            class="actions__btn actions__btn_cart"
+            aria-label="Cart"
+          >
             <img src="./images/case.svg" alt="" />
           </a>
           <a
@@ -68,17 +71,17 @@
         </div>
       </div>
     </header>
-
-    <main class="main">
-      <section class="preview wrap">
-        <div class="preview__crumbs">
+    <div class="preview">
+      <div class="preview__crumbs">
+        <div class="home">
           <a href="index.html">Home</a>
           <span> <img src="./images/arrowAside.svg" alt="" /></span>
-          <span>Casual</span>
         </div>
-      </section>
-
-      <section class="catalog wrap">
+        <span>Casual</span>
+      </div>
+    </div>
+    <main class="main">
+      <section class="catalog">
         <aside class="filters">
           <div class="filters__block-header">
             <h3>Filters</h3>
@@ -98,7 +101,7 @@
               Shirts <span><img src="./images/arrowAside.svg" alt="" /></span>
             </p>
             <p>
-              Hoodie <span><img src="./images/arrowAside.svg"  alt="" /></span>
+              Hoodie <span><img src="./images/arrowAside.svg" alt="" /></span>
             </p>
             <p>
               Jeans <span><img src="./images/arrowAside.svg" alt="" /></span>
@@ -108,11 +111,7 @@
           <div class="filters__block">
             <article class="article-prise">
               <h4>Price</h4>
-              <img
-                class="arrow-top"
-                src="./images/arrowTop.svg"
-                alt=""
-              />
+              <img class="arrow-top" src="./images/arrowTop.svg" alt="" />
             </article>
             <div class="prise-slider-wrapper">
               <input
@@ -132,16 +131,34 @@
           </div>
           <!-- section colors-->
           <div class="filters__block">
-            <div class=filters__block-header">
+            <div class="filters__block-header">
               <h4>Colors</h4>
               <img src="./images/arrowTop.svg" alt="Colors" />
             </div>
-            <div class="color-grid">
+
+            <div class="colors-main">
+              <div class="colors-main__info">
+                <div class="color-green"></div>
+                <div class="color-red"></div>
+                <div class="color-yallow"></div>
+                <div class="color-oreng"></div>
+                <div class="color-azure"></div>
+              </div>
+              <div class="colors-main__info">
+                <div class="color-blue"></div>
+                <div class="color-violet"></div>
+                <div class="color-pink"></div>
+                <div class="color-white"></div>
+                <div class="color-black"></div>
+              </div>
+            </div>
+          </div>
+
           <div class="filters__block">
             <div class="filters__block-header">
-            <h4>Size</h4>
-            <img src="./images.on-sale/arrow-top.svg" alt="">
-          </div>
+              <h4>Size</h4>
+              <img src="./images.on-sale/arrow-top.svg" alt="" />
+            </div>
             <div class="filters__sizes">
               <button class="filters__size">XX-Small</button>
               <button class="filters__size">X-Small</button>
@@ -157,14 +174,22 @@
 
           <div class="filters__block">
             <div class="filters__block-header">
-            <h4>Dress Style</h4>
-            <img src="./images/arrowButtom.svg" alt="" />
+              <h4>Dress Style</h4>
+              <img src="./images/arrowButtom.svg" alt="" />
             </div>
             <div class="filters__list">
-              <p>Casual <span><img src="./images/arrowAside.svg"/></span></p>
-              <p>Formal <span><img src="./images/arrowAside.svg"/></span></p>
-              <p>Party <span><img src="./images/arrowAside.svg"/></span></p>
-              <p>Gym <span><img src="./images/arrowAside.svg"/></span></p>
+              <p>
+                Casual <span><img src="./images/arrowAside.svg" /></span>
+              </p>
+              <p>
+                Formal <span><img src="./images/arrowAside.svg" /></span>
+              </p>
+              <p>
+                Party <span><img src="./images/arrowAside.svg" /></span>
+              </p>
+              <p>
+                Gym <span><img src="./images/arrowAside.svg" /></span>
+              </p>
             </div>
           </div>
           <button class="filters__apply" type="button">Apply Filter</button>
@@ -190,9 +215,9 @@
                   <img
                     class="card__img"
                     src="./images/gradientGraphicT-shirt.svg"
-                    alt="gradient t-shirt"
+                    alt="gradient cloth"
                   />
-                  <h3 class="card__title">Gradient Graphic T-shirt</h3>
+                  <h3 class="card__title">Gradient Graphic cloth</h3>
                   <div class="card__rate">
                     <img src="./images/3.5Stars.svg" alt="3.5" />
                     <span>3.5/5</span>
@@ -222,9 +247,9 @@
                   <img
                     class="card__img"
                     src="./images/blackStripedT-shirt.svg"
-                    alt="striped t-shirt"
+                    alt="striped cloth"
                   />
-                  <h3 class="card__title">Black Striped T-shirt</h3>
+                  <h3 class="card__title">Black Striped cloth</h3>
                   <div class="card__rate">
                     <img src="./images/fiveStars.svg" alt="5.0" />
                     <span>5.0/5</span>
@@ -280,9 +305,9 @@
                   <img
                     class="card__img"
                     src="./images/sleeveStripedT-shirt.svg"
-                    alt="sleeve t-shirt"
+                    alt="sleeve cloth"
                   />
-                  <h3 class="card__title">Sleeve Striped T-shirt</h3>
+                  <h3 class="card__title">Sleeve Striped cloth</h3>
                   <div class="card__rate">
                     <img src="./images/starsCart.svg" alt="4.5" />
                     <span>4.5/5</span>
@@ -321,10 +346,10 @@
                 <div class="card">
                   <img
                     class="card__img"
-                    src="./images/gradientGraphicT-shirt.svg"
-                    alt="courage t-shirt"
+                    src="./images/couradeT-shirt.svg"
+                    alt="courage cloth"
                   />
-                  <h3 class="card__title">Courage Graphic T-shirt</h3>
+                  <h3 class="card__title">Courage Graphic cloth</h3>
                   <div class="card__rate">
                     <img src="./images/fourStars.svg" alt="4.0" />
                     <span>4.0/5</span>
@@ -379,7 +404,9 @@
           <img src="./images/email.svg" alt="" />
           <input type="email" placeholder="Enter your email address" />
         </div>
-        <button type="button">Subscribe to Newsletter</button>
+        <button type="button" class="subscribe__btn">
+          Subscribe to Newsletter
+        </button>
       </form>
     </section>
 
