@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../scss/cart.css" />
     <title>cart</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&display=swap"
@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <!-- Black stripe -->
+   <!-- Black stripe -->
     <div class="promo-bar__container">
       <p class="promo-bar__text">
         Sign up and get 20% off to your first order.
@@ -22,9 +22,12 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="container header__inner">
-         <a class="logo" href="./index.html">
-           <img src="./images/shop.co.svg" alt="SHOP.CO" />
-         </a>
+          <a href="#"
+            ><img src="./images/menuNone.svg" alt="" class="menuNone"
+          /></a>
+          <a class="logo" href="./index.html">
+            <img src="./images/shop.co.svg" alt="SHOP.CO" class="shopC0" />
+          </a>
         </div>
         <!-- header__menu -->
         <nav class="header__menu">
@@ -55,6 +58,9 @@
         </div>
         <!--The basket and profile icons-->
         <div class="header__actions">
+          <a href="#"
+            ><img src="./images/lupaNone.svg" alt="none" class="iconNone"
+          /></a>
           <a
             href="./cart.html"
             class="actions__btn actions__btn_cart"
@@ -83,7 +89,7 @@
         </div>
       </div>
       <div class="title">
-        <h1><b> Your cart</b></h1>
+        <h1 class="Bigtitle"><b> Your cart</b></h1>
       </div>
       <!-- section -->
       <section class="cart">
@@ -94,17 +100,17 @@
               <img class="product-img" src="./images/cirh1.svg" alt="" />
               <div class="">
                 <div class="product__container-info">
-                  <h4>Gradient Graphic T-shirt</h4>
-                  <p>Size: <i> Large</i></p>
-                  <p>Color: <i>White</i></p>
-                  <span>$145</span>
+                  <h4 class="product-title" >Gradient Graphic T-shirt</h4>
+                  <p class="product-info">Size: <i> Large</i></p>
+                  <p class="product-info">Color: <i>White</i></p>
+                  <span class="num">$145</span>
                 </div>
               </div>
               <div class="product__container-quantity">
                 <img class="corzina-img" src="./images/corzina.svg" alt="" />
                 <div class="quantily-selector">
                   <button class="quantily-selector__btn">-</button>
-                  <span>1</span>
+                  <span class="text1">1</span>
                   <button class="quantily-selector__btn">+</button>
                 </div>
               </div>
@@ -114,14 +120,14 @@
               <img class="product-img" src="./images/cith2.png" alt="" />
               <div class="">
                 <div class="product__container-info">
-                  <h4>CHECKERED SHIRT</h4>
-                  <p>Size: <i> Medium</i></p>
-                  <p>Color: <i>Red</i></p>
-                  <span>$180</span>
+                  <h4 class="product-title">CHECKERED SHIRT</h4>
+                  <p class="product-info">Size: <i> Medium</i></p> 
+                  <p class="product-info">Color: <i>Red</i></p>  
+                  <span class="num">$180</span>
                 </div>
               </div>
               <div class="product__container-quantity">
-                <img class="corzina-img" src="./images/corzina.svg" alt="" />
+                  <img class="corzina-img" src="./images/corzina.svg" alt="" />
                 <div class="quantily-selector">
                   <button class="quantily-selector__btn">-</button>
                   <span>1</span>
@@ -134,10 +140,10 @@
               <img class="product-img" src="./images/cith3.svg" alt="" />
               <div class="">
                 <div class="product__container-info">
-                  <h4>SKINNY FIT JEANS</h4>
-                  <p>Size: <i> Large</i></p>
-                  <p>Color: <i>Blue</i></p>
-                  <span>$240</span>
+                  <h4 class="product-title" > SKINNY FIT JEANS</h4>
+                  <p class="product-info" > Size: <i> Large</i></p>
+                  <p class="product-info" > Color: <i>Blue</i></p>
+                  <span class="num">$240</span>
                 </div>
               </div>
               <div class="product__container-quantity">
@@ -152,18 +158,18 @@
           </div>
           <!-- 2 див-->
           <div class="price">
-            <h3>Order Summary</h3>
+            <h3 class="prise-title">Order Summary</h3>
             <div class="price__result">
               <div class="price__result-product">
-                <p class="price__result-product--p">Subtotal</p>
+                <p class="product-text">Subtotal</p>
                 <span class="prise__span">$565</span>
               </div>
               <div class="price__result-product">
-                <p class="price__result-product--p">Discount (-20%)</p>
+                <p class="product-text">Discount (-20%)</p>
                 <span class="prise113">-$113</span>
               </div>
               <div class="price__result-product">
-                <p class="price__result-product--p">Delivery Fee</p>
+                <p class="product-text">Delivery Fee</p>
                 <span class="prise__span">$15</span>
               </div>
               <hr class="price__line" />
@@ -175,7 +181,7 @@
             <!-- search bar -->
             <div class="container__form">
                 <div class="input-line">
-                  <img src="./images/page.svg" />
+                  <img src="./images/page.svg" class="input-img" />
                   <input
                     class="input-line__input"
                     type="search"
@@ -186,73 +192,81 @@
             </div>
 
             <button class="price__btn">
-              Go to Checkout <img src="./images/arrowWith.svg" alt="" />
+              Go to Checkout <img src="./images/arrowWith.svg" alt="" class="button_img"/>
             </button>
           </div>
         </div>
-     <section class="subscribe">
+<!--black-element-->
+    <section class="subscribe-home">
       <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
       <form class="subscribe-form" action="#">
         <div class="subscribe-text">
           <img src="./images/email.svg" alt="" />
           <input type="email" placeholder="Enter your email address" />
         </div>
-        <button type="button" class="subscribe__btn">Subscribe to Newsletter</button>
+        <button type="button" class="subscribe__btn">
+          Subscribe to Newsletter
+        </button>
       </form>
-     </section>
-    </main>
-    <footer class="footer">
+    </section>
+    <!-- footer -->
+    <footer class="footer-home">
       <div class="footer__top wrap">
         <div class="footer__about">
-          <h3>SHOP.CO</h3>
-          <p>
+          <h3 class="footer-title">SHOP.CO</h3>
+          <p class="footer-text">
             We have clothes that suits your style and which you’re proud to
             wear. From women to men.
           </p>
           <div class="footer__social">
-            <img src="images/tviter.svg" alt="twitter" />
-            <img src="images/fasbook.svg" alt="facebook" />
-            <img src="images/instogram.svg" alt="instagram" />
-            <img src="images/gitnab.svg" alt="github" />
+            <img src="./images/tviter.svg" alt="twitter" />
+            <img src="./images/fasbook.svg" alt="facebook" />
+            <img src="./images/instogram.svg" alt="instagram" />
+            <img src="./images/gitnab.svg" alt="github" />
           </div>
         </div>
-        <div class="footer__col">
-          <h4>COMPANY</h4>
-          <a href="#">About</a>
-          <a href="#">Features</a>
-          <a href="#">Works</a>
-          <a href="#">Career</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Works</a>
+            <a href="#">Career</a>
+          </div>
+          <div class="footer-col">
+            <h4>HELP</h4>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>HELP</h4>
-          <a href="#">Customer Support</a>
-          <a href="#">Delivery Details</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-        <div class="footer__col">
-          <h4>FAQ</h4>
-          <a href="#">Account</a>
-          <a href="#">Manage Deliveries</a>
-          <a href="#">Orders</a>
-          <a href="#">Payments</a>
-        </div>
-        <div class="footer__col">
-          <h4>RESOURCES</h4>
-          <a href="#">Free eBooks</a>
-          <a href="#">Development Tutorial</a>
-          <a href="#">How to - Blog</a>
-          <a href="#">Youtube Playlist</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>FAQ</h4>
+            <a href="#">Account</a>
+            <a href="#">Manage Deliveries</a>
+            <a href="#">Orders</a>
+            <a href="#">Payments</a>
+          </div>
+          <div class="footer-col">
+            <h4>RESOURCES</h4>
+            <a href="#">Free eBooks</a>
+            <a href="#">Development Tutorial</a>
+            <a href="#">How to - Blog</a>
+            <a href="#">Youtube Playlist</a>
+          </div>
         </div>
       </div>
+      <hr class="footer-line" />
       <div class="footer__bottom wrap">
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <p class="footerText">Shop.co © 2000-2023, All Rights Reserved</p>
         <div class="footer__pays">
-          <img src="images/visa.svg" alt="visa" />
-          <img src="images/numberTwo.svg" alt="mastercard" />
-          <img src="images/payPal.svg" alt="paypal" />
-          <img src="images/payApple.svg" alt="apple pay" />
-          <img src="images/payGoogle.svg" alt="google pay" />
+          <img src="./images/visa.svg" alt="visa" />
+          <img src="./images/numberTwo.svg" alt="mastercard" />
+          <img src="./images/payPal.svg" alt="paypal" />
+          <img src="./images/payApple.svg" alt="apple pay" />
+          <img src="./images/payGoogle.svg" alt="google pay" />
         </div>
       </div>
     </footer>

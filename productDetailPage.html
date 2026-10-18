@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Detail Page</title>
-    <link rel="stylesheet" href="../css/productPage.css" />
+    <link rel="stylesheet" href="../scss/productPage.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
       rel="stylesheet"
@@ -22,8 +22,11 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="container header__inner">
+          <a href="#"
+            ><img src="./images/menuNone.svg" alt="" class="menuNone"
+          /></a>
           <a class="logo" href="./index.html">
-            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+            <img src="./images/shop.co.svg" alt="SHOP.CO" class="shopC0" />
           </a>
         </div>
         <!-- header__menu -->
@@ -55,6 +58,9 @@
         </div>
         <!--The basket and profile icons-->
         <div class="header__actions">
+          <a href="#"
+            ><img src="./images/lupaNone.svg" alt="none" class="iconNone"
+          /></a>
           <a
             href="./cart.html"
             class="actions__btn actions__btn_cart"
@@ -90,29 +96,34 @@
     <main class="main">
       <section class="cloth">
         <div class="cloth__container">
-          <div class="cloth__container-img">
-            <img
-              src="./images/greenT-shirtOne.svg"
-              alt=""
-              class="img__transform"
-            />
-            <img
-              src="./images/greenT-shirtTwo.svg"
-              alt=""
-              class="img__transform"
-            />
-            <img
-              src="./images/greenT-shirtThee.svg"
-              alt=""
-              class="img__transform"
-            />
+          <div class="cloth-twoObject">
+            <div class="cloth__container-img">
+              <img
+                src="./images/greenT-shirtOne.svg"
+                alt=""
+                class="img__transform"
+              />
+              <img
+                src="./images/greenT-shirtTwo.svg"
+                alt=""
+                class="img__transform"
+              />
+              <img
+                src="./images/greenT-shirtThee.svg"
+                alt=""
+                class="img__transform"
+              />
+            </div>
+            <div class="container__main-img">
+              <img
+                src="./images/greenT-shirtHero.svg"
+                alt=""
+                class="main-img"
+              />
+            </div>
           </div>
-          <div class="cloth__container-hero--img">
-            <img src="./images/greenT-shirtHero.svg" alt="" />
-          </div>
-
           <div class="container-info">
-            <h1>One Life Graphic T-shirt</h1>
+            <h1 class="title">One Life Graphic T-shirt</h1>
             <div class="container-info--static">
               <img src="./images/starsCart.svg" alt="" />
               <span class="rating">4.5/5</span>
@@ -122,25 +133,25 @@
               <span class="old-page">$300</span>
               <span class="discont-page">-40%</span>
             </div>
-            <p>
+            <p class="text">
               This graphic cloth which is perfect for any occasion. Crafted from
               a soft and breathable fabric, it offers superior comfort and
               style.
             </p>
             <hr class="page__link" />
-            <p>Select Colors</p>
+            <p class="info">Select Colors</p>
             <div class="container-info__color">
               <div class="container-info__color-purple"></div>
               <div class="container-info__color-green"></div>
               <div class="container-info__color-brown"></div>
             </div>
             <hr class="page__link" />
-            <p>Choose Size</p>
-            <div class="t-shirt-btn">
-              <button class="t-shirt-btn__small">Small</button>
-              <button class="t-shirt-btn__medium">Medium</button>
-              <button class="t-shirt-btn__large">Large</button>
-              <button class="t-shirt-btn__Xlarge">X-Large</button>
+            <p class="info">Choose Size</p>
+            <div class="clothes-btn">
+              <button class="clothes-btn_small">Small</button>
+              <button class="clothes-btn_medium">Medium</button>
+              <button class="clothes-btn_large">Large</button>
+              <button class="clothes-btn_Xlarge">X-Large</button>
             </div>
             <hr class="page__link" />
             <div class="cloth__footer">
@@ -158,20 +169,20 @@
       <section class="section-comment">
         <div class="section-comment__container">
           <div class="container-choice">
-            <p class="container-choice__p">Product Details</p>
-            <p class="container-choice__text">Rating & Reviews</p>
-            <p class="container-choice__p">FAQs</p>
+            <p class="choice__text">Product Details</p>
+            <p class="choice__active">Rating & Reviews</p>
+            <p class="choice__text">FAQs</p>
           </div>
           <hr class="link" />
           <hr class="link-active" />
           <div class="container-title">
             <div class="title-reviews">
-              <h3>All Reviews</h3>
-              <p>(451)</p>
+              <h3 class="reviews-title">All Reviews</h3>
+              <p class="reviews-text">(451)</p>
             </div>
             <div class="container-filter">
               <button class="container-filter__filter">
-                <img src="./images/filter.svg" alt="" />
+                <img src="./images/filter.svg" alt="" class="filter-img" />
               </button>
               <button class="container-filter__whiteImg">
                 Latest
@@ -187,19 +198,23 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/starsCart.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Samantha D.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Samantha D.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "I absolutely love this t-shirt! The design is unique and
                     the fabric feels so comfortable. As a fellow designer, I
                     appreciate the attention to detail. It's become my favorite
                     go-to shirt."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 14, 2023
                   </p>
                 </div>
@@ -209,19 +224,23 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/fourStars.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Alex M.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Alex M.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "The t-shirt exceeded my expectations! The colors are
                     vibrant and the print quality is top-notch. Being a UI/UX
                     designer myself, I'm quite picky about aesthetics, and this
                     t-shirt definitely gets a thumbs up from me."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 15, 2023
                   </p>
                 </div>
@@ -232,19 +251,23 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/3.5Stars.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Ethan R.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Ethan R.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "This t-shirt is a must-have for anyone who appreciates good
                     design. The minimalistic yet stylish pattern caught my eye,
                     and the fit is perfect. I can see the designer's touch in
                     every aspect of this shirt."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 16, 2023
                   </p>
                 </div>
@@ -256,20 +279,24 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/starsCart.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Olivia P.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Olivia P.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "As a UI/UX enthusiast, I value simplicity and
                     functionality. This t-shirt not only represents those
                     principles but also feels great to wear. It's evident that
                     the designer poured their creativity into making this
                     t-shirt stand out."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 17, 2023
                   </p>
                 </div>
@@ -280,19 +307,23 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/starsCart.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Liam K.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Liam K.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "This t-shirt is a fusion of comfort and creativity. The
                     fabric is soft, and the design speaks volumes about the
                     designer's skill. It's like wearing a piece of art that
                     reflects my passion for both design and fashion."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 18, 2023
                   </p>
                 </div>
@@ -303,19 +334,23 @@
                 <div class="container__reviews-header">
                   <div class="container__reviews-header_img">
                     <img src="./images/starsCart.svg" alt="" />
-                    <img src="./images/points.svg" alt="" />
+                    <img src="./images/points.svg" alt="" class="points" />
                   </div>
                   <div class="container__reviews-header_name">
-                    <span>Ava H.</span
-                    ><img src="./images/checkMark.svg" alt="" />
+                    <span class="name">Ava H.</span
+                    ><img
+                      src="./images/checkMark.svg"
+                      alt=""
+                      class="checkMark"
+                    />
                   </div>
-                  <p class="container__reviews-header_p">
+                  <p class="reviews-header_text">
                     "I'm not just wearing a t-shirt; I'm wearing a piece of
                     design philosophy. The intricate details and thoughtful
                     layout of the design make this shirt a conversation
                     starter."
                   </p>
-                  <p class="container__reviews-text">
+                  <p class="container__reviews-info">
                     Posted on August 19, 2023
                   </p>
                 </div>
@@ -324,7 +359,7 @@
           </div>
         </div>
         <div class="container-reviews__btn">
-          <button>Load More Reviews</button>
+          <button class="button">Load More Reviews</button>
         </div>
       </section>
 
@@ -342,8 +377,8 @@
                 />
                 <h3 class="card__title">Polo with Contrast Trims</h3>
                 <div class="card__rate">
-                  <img src="./images/starsCart.svg" alt="4/5" />
-                  <span>4.0/5</span>
+                  <img src="./images/starsCart.svg" alt="4/5" class="stars" />
+                  <span class="assessment">4.0/5</span>
                 </div>
                 <div class="product-price">
                   <span class="current-price">$212</span>
@@ -362,8 +397,8 @@
                 />
                 <h3 class="card__title">Gradient Graphic cloth</h3>
                 <div class="card__rate">
-                  <img src="./images/3.5Stars.svg" alt="3.5" />
-                  <span>3.5/5</span>
+                  <img src="./images/3.5Stars.svg" alt="3.5" class="stars" />
+                  <span class="assessment">3.5/5</span>
                 </div>
                 <span class="current-price">$145</span>
               </div>
@@ -378,8 +413,8 @@
                 />
                 <h3 class="card__title">Polo with Tipping Details</h3>
                 <div class="card__rate">
-                  <img src="./images/starsCart.svg" alt="4.5" />
-                  <span>4.5/5</span>
+                  <img src="./images/starsCart.svg" alt="4.5" class="stars" />
+                  <span class="assessment">4.5/5</span>
                 </div>
                 <span class="current-price">$180</span>
               </div>
@@ -394,8 +429,8 @@
                 />
                 <h3 class="card__title">Black Striped cloth</h3>
                 <div class="card__rate">
-                  <img src="./images/fiveStars.svg" alt="5.0" />
-                  <span>5.0/5</span>
+                  <img src="./images/fiveStars.svg" alt="5.0" class="stars" />
+                  <span class="assessment">5.0/5</span>
                 </div>
                 <div class="product-price">
                   <span class="current-price">$120</span>
@@ -407,71 +442,78 @@
           </div>
         </div>
       </section>
-      <section class="subscribe">
-        <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-        <form class="subscribe-form" action="#">
-          <div class="subscribe-text">
-            <img src="./images/email.svg" alt="" />
-            <input type="email" placeholder="Enter your email address" />
-          </div>
-          <button type="button" class="subscribe__btn">
-            Subscribe to Newsletter
-          </button>
-        </form>
-      </section>
     </main>
-    <footer class="footer">
+    <!--black-element-->
+    <section class="subscribe-home">
+      <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <form class="subscribe-form" action="#">
+        <div class="subscribe-text">
+          <img src="./images/email.svg" alt="" />
+          <input type="email" placeholder="Enter your email address" />
+        </div>
+        <button type="button" class="subscribe__btn">
+          Subscribe to Newsletter
+        </button>
+      </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer-home">
       <div class="footer__top wrap">
         <div class="footer__about">
-          <h3>SHOP.CO</h3>
-          <p>
+          <h3 class="footer-title">SHOP.CO</h3>
+          <p class="footer-text">
             We have clothes that suits your style and which you’re proud to
             wear. From women to men.
           </p>
           <div class="footer__social">
-            <img src="images/tviter.svg" alt="twitter" />
-            <img src="images/fasbook.svg" alt="facebook" />
-            <img src="images/instogram.svg" alt="instagram" />
-            <img src="images/gitnab.svg" alt="github" />
+            <img src="./images/tviter.svg" alt="twitter" />
+            <img src="./images/fasbook.svg" alt="facebook" />
+            <img src="./images/instogram.svg" alt="instagram" />
+            <img src="./images/gitnab.svg" alt="github" />
           </div>
         </div>
-        <div class="footer__col">
-          <h4>COMPANY</h4>
-          <a href="#">About</a>
-          <a href="#">Features</a>
-          <a href="#">Works</a>
-          <a href="#">Career</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Works</a>
+            <a href="#">Career</a>
+          </div>
+          <div class="footer-col">
+            <h4>HELP</h4>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>HELP</h4>
-          <a href="#">Customer Support</a>
-          <a href="#">Delivery Details</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-        <div class="footer__col">
-          <h4>FAQ</h4>
-          <a href="#">Account</a>
-          <a href="#">Manage Deliveries</a>
-          <a href="#">Orders</a>
-          <a href="#">Payments</a>
-        </div>
-        <div class="footer__col">
-          <h4>RESOURCES</h4>
-          <a href="#">Free eBooks</a>
-          <a href="#">Development Tutorial</a>
-          <a href="#">How to - Blog</a>
-          <a href="#">Youtube Playlist</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>FAQ</h4>
+            <a href="#">Account</a>
+            <a href="#">Manage Deliveries</a>
+            <a href="#">Orders</a>
+            <a href="#">Payments</a>
+          </div>
+          <div class="footer-col">
+            <h4>RESOURCES</h4>
+            <a href="#">Free eBooks</a>
+            <a href="#">Development Tutorial</a>
+            <a href="#">How to - Blog</a>
+            <a href="#">Youtube Playlist</a>
+          </div>
         </div>
       </div>
+      <hr class="footer-line" />
       <div class="footer__bottom wrap">
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <p class="footerText">Shop.co © 2000-2023, All Rights Reserved</p>
         <div class="footer__pays">
-          <img src="images/visa.svg" alt="visa" />
-          <img src="images/numberTwo.svg" alt="mastercard" />
-          <img src="images/payPal.svg" alt="paypal" />
-          <img src="images/payApple.svg" alt="apple pay" />
-          <img src="images/payGoogle.svg" alt="google pay" />
+          <img src="./images/visa.svg" alt="visa" />
+          <img src="./images/numberTwo.svg" alt="mastercard" />
+          <img src="./images/payPal.svg" alt="paypal" />
+          <img src="./images/payApple.svg" alt="apple pay" />
+          <img src="./images/payGoogle.svg" alt="google pay" />
         </div>
       </div>
     </footer>

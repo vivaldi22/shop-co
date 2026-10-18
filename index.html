@@ -9,8 +9,7 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="./User.js"></script>
+    <link rel="stylesheet" href="../scss/style.css" />
   </head>
 
   <body>
@@ -25,8 +24,11 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="container header__inner">
+          <a href="#"
+            ><img src="./images/menuNone.svg" alt="" class="menuNone"
+          /></a>
           <a class="logo" href="./index.html">
-            <img src="./images/shop.co.svg" alt="SHOP.CO" />
+            <img src="./images/shop.co.svg" alt="SHOP.CO" class="shopC0" />
           </a>
         </div>
         <!-- header__menu -->
@@ -58,6 +60,9 @@
         </div>
         <!--The basket and profile icons-->
         <div class="header__actions">
+          <a href="#"
+            ><img src="./images/lupaNone.svg" alt="none" class="iconNone"
+          /></a>
           <a
             href="./cart.html"
             class="actions__btn actions__btn_cart"
@@ -79,55 +84,63 @@
       <section class="hero">
         <div class="hero__container">
           <div class="container__info">
-            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-            <p>
+            <h1 class="title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p class="hero_text">
               Browse through our diverse range of meticulously crafted garments,
               designed to bring out your individuality and cater to your sense
               of style.
             </p>
             <button href="#" class="hero__btn">Shop Now</button>
           </div>
-          <div class="container-product-stars--cart">
-            <img src="./images/stars.svg" alt="star" class="small_star" />
-            <img src="./images/star.svg" alt="star" class="big_star" />
-          </div>
+
+          <img src="./images/stars.svg" alt="star" class="small_star" />
+          <img src="./images/star.svg" alt="star" class="big_star" />
+          <img src="./images/heroAdaptiv.svg" alt="" class="hero-img" />
           <div class="container-static">
             <div class="container-static__text">
-              <h2>200+</h2>
-              <p>International Brands</p>
+              <h2 class="staticNumber">200+</h2>
+              <p class="statictext">International Brands</p>
             </div>
             <img src="./images/lineHero.svg" alt="" />
             <div class="container-static__text">
-              <h2>2,000+</h2>
-              <p>High-Quality Products</p>
+              <h2 class="staticNumber">2,000+</h2>
+              <p class="statictext">High-Quality Products</p>
             </div>
-            <img src="./images/lineTen.svg" alt="" />
-            <div class="container-static__text">
-              <h2>30,000+</h2>
-              <p>Happy Customers</p>
+            <img src="./images/lineTen.svg" alt="" class="static-img" />
+            <div class="container-static__textBottom">
+              <h2 class="staticNumber">30,000+</h2>
+              <p class="statictext">Happy Customers</p>
             </div>
           </div>
         </div>
       </section>
       <!--independent element-->
       <section class="brends">
-        <img src="./images/versace.svg" alt="versace" />
-        <img src="./images/zara.svg" alt="Zara" />
-        <img src="./images/gucciLogo.svg" alt="gucci-logo" />
-        <img src="./images/prada.svg" alt="prada" />
-        <img src="./images/calvinKlein.svg" alt="Calvin.Klein" />
+        <img src="./images/versace.svg" alt="versace" class="versace" />
+        <img src="./images/zara.svg" alt="Zara" class="zara" />
+        <img src="./images/gucciLogo.svg" alt="gucci-logo" class="gucci-logo" />
+        <img src="./images/prada.svg" alt="prada" class="prada" />
+        <img
+          src="./images/calvinKlein.svg"
+          alt="Calvin.Klein"
+          class="calvinKlein"
+        />
       </section>
       <!--section two-->
       <section class="catalog">
         <div class="section-catalog__container">
           <div class="catalog__title">
-            <h2>NEW ARRIVALS</h2>
+            <h2 class="catalog-title">NEW ARRIVALS</h2>
           </div>
           <div class="container-products">
             <!-- card number 1 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
-                <img src="./images/blackT-shirt.svg" alt="black cloth" />
+                <img
+                  src="./images/blackT-shirt.svg"
+                  alt="black cloth"
+                  class="clothes"
+                />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">T-SHIRT WITH TAPE DETAILS</h3>
@@ -146,9 +159,13 @@
               </div>
             </article>
             <!-- card number 2 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
-                <img src="./images/skinnyFitJeans.svg" alt="SKINNY FIT JEANS" />
+                <img
+                  src="./images/skinnyFitJeans.svg"
+                  alt="SKINNY FIT JEANS"
+                  class="clothes"
+                />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">SKINNY FIT JEANS</h3>
@@ -169,9 +186,13 @@
               </div>
             </article>
             <!-- card number 3 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
-                <img src="./images/checkeredShirt.svg" alt="CHECKERED-SHIRT" />
+                <img
+                  src="./images/checkeredShirt.svg"
+                  alt="CHECKERED-SHIRT"
+                  class="clothes"
+                />
               </div>
               <div class="container-product--info">
                 <h3 class="product-title">CHECKERED SHIRT</h3>
@@ -190,11 +211,12 @@
               </div>
             </article>
             <!-- card number 4 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
                 <img
                   src="./images/sleeveStripedT-shirt.svg"
                   alt="SLEEVE STRIPED T-SHIRT"
+                  class="clothes"
                 />
               </div>
               <div class="container-product--info">
@@ -227,15 +249,16 @@
       <section class="catalog">
         <div class="section-catalog__container">
           <div class="catalog__title">
-            <h2>TOP SELLING</h2>
+            <h2 class="catalog-title">TOP SELLING</h2>
           </div>
           <div class="container-products">
             <!-- card number 1 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
                 <img
                   src="./images/verticalStripedShirt.svg"
                   alt="VERTICAL STRIPED SHIRT"
+                  class="clothes"
                 />
               </div>
               <div class="container-product--info">
@@ -257,11 +280,12 @@
               </div>
             </article>
             <!-- card number 2 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
                 <img
                   src="./images/checkeredShirt.svg"
                   alt="COURAGE GRAPHIC T-SHIRT"
+                  class="clothes"
                 />
               </div>
               <div class="container-product--info">
@@ -281,11 +305,12 @@
               </div>
             </article>
             <!-- card number 3 -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
                 <img
                   src="./images/looseFitBermudaShorts.svg"
                   alt="LOOSE FIT BERMUDA SHORTS"
+                  class="clothes"
                 />
               </div>
               <div class="container-product--info">
@@ -305,11 +330,12 @@
               </div>
             </article>
             <!-- card number four -->
-            <article class="article-product--card">
+            <article class="article-productCard">
               <div class="product__images">
                 <img
                   src="./images/fadedSkinnyJeans.svg"
                   alt="FADED SKINNY JEANS"
+                  class="clothes"
                 />
               </div>
               <div class="container-product--info">
@@ -338,9 +364,9 @@
       <section class="dress_style">
         <div class="dress_style__container">
           <div class="dress_style__title">
-            <h2>BROWSE BY DRESS STYLE</h2>
+            <h2 class="dress-title">BROWSE BY DRESS STYLE</h2>
           </div>
-          <div class="dress-style--cart">
+          <div class="dress-styleCart">
             <!-- card number 1 -->
             <div class="container-casual_formal">
               <div class="style-cart__casual">
@@ -370,22 +396,20 @@
       </section>
       <!-- now section-->
       <section class="reviews">
-        <div class="reviews-header">
-          <h2>OUR HAPPY CUSTOMERS</h2>
+        <div class="reviews-title">
+          <h2 class="reviews-titleText">OUR HAPPY CUSTOMERS</h2>
           <div class="reviews-header__btn">
-            <button class="reviews-header__btn">
+            <button class="reviews-header__btn" id="prev">
               <img src="./images/leftArrow.svg" alt="left arrow" />
             </button>
-            <button class="reviews-header__btn">
+            <button class="reviews-header__btn" id="next">
               <img src="./images/arrow-right.svg" alt="arrow right" />
             </button>
           </div>
         </div>
         <!--main reviews-main__info-->
         <div class="reviews-main">
-          <img src="./images/right.svg" alt="" />
-
-          <div class="reviews-main__info">
+          <div class="reviews-main__info" id="1">
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>Sarah M.</h3>
@@ -398,7 +422,20 @@
             </p>
           </div>
 
-          <div class="reviews-main__info">
+          <div class="reviews-main__info" id="2">
+            <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
+            <div class="reviews-main__author">
+              <h3>Sarah M.</h3>
+              <img src="./images/checkMark.svg" alt="check mark" />
+            </div>
+            <p>
+              "I'm blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece
+              I've bought has exceeded my expectations.”
+            </p>
+          </div>
+
+          <div class="reviews-main__info" id="3">
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>Alex K.</h3>
@@ -412,7 +449,7 @@
             </p>
           </div>
 
-          <div class="reviews-main__info">
+          <div class="reviews-main__info" id="4">
             <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
             <div class="reviews-main__author">
               <h3>James L.</h3>
@@ -425,8 +462,19 @@
               trends.”
             </p>
           </div>
-
-          <img src="./images/left.svg" alt="" />
+          <div class="reviews-main__info" id="5">
+            <img src="./images/fiveStars.svg" alt="5-product-stars--cart" />
+            <div class="reviews-main__author">
+              <h3>Mooen</h3>
+              <img src="./images/checkMark.svg" alt="check mark" />
+            </div>
+            <p>
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -447,8 +495,8 @@
     <footer class="footer-home">
       <div class="footer__top wrap">
         <div class="footer__about">
-          <h3>SHOP.CO</h3>
-          <p>
+          <h3 class="footer-title">SHOP.CO</h3>
+          <p class="footer-text">
             We have clothes that suits your style and which you’re proud to
             wear. From women to men.
           </p>
@@ -459,37 +507,42 @@
             <img src="./images/gitnab.svg" alt="github" />
           </div>
         </div>
-        <div class="footer__col">
-          <h4>COMPANY</h4>
-          <a href="#">About</a>
-          <a href="#">Features</a>
-          <a href="#">Works</a>
-          <a href="#">Career</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Works</a>
+            <a href="#">Career</a>
+          </div>
+          <div class="footer-col">
+            <h4>HELP</h4>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>HELP</h4>
-          <a href="#">Customer Support</a>
-          <a href="#">Delivery Details</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-        <div class="footer__col">
-          <h4>FAQ</h4>
-          <a href="#">Account</a>
-          <a href="#">Manage Deliveries</a>
-          <a href="#">Orders</a>
-          <a href="#">Payments</a>
-        </div>
-        <div class="footer__col">
-          <h4>RESOURCES</h4>
-          <a href="#">Free eBooks</a>
-          <a href="#">Development Tutorial</a>
-          <a href="#">How to - Blog</a>
-          <a href="#">Youtube Playlist</a>
+        <div class="footer-col__container">
+          <div class="footer-col">
+            <h4>FAQ</h4>
+            <a href="#">Account</a>
+            <a href="#">Manage Deliveries</a>
+            <a href="#">Orders</a>
+            <a href="#">Payments</a>
+          </div>
+          <div class="footer-col">
+            <h4>RESOURCES</h4>
+            <a href="#">Free eBooks</a>
+            <a href="#">Development Tutorial</a>
+            <a href="#">How to - Blog</a>
+            <a href="#">Youtube Playlist</a>
+          </div>
         </div>
       </div>
+      <hr class="footer-line" />
       <div class="footer__bottom wrap">
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <p class="footerText">Shop.co © 2000-2023, All Rights Reserved</p>
         <div class="footer__pays">
           <img src="./images/visa.svg" alt="visa" />
           <img src="./images/numberTwo.svg" alt="mastercard" />
@@ -500,4 +553,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/mockProduct.js" />
 </html>
