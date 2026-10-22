@@ -395,6 +395,9 @@ input {
   font-family: "Satoshi", sans-serif;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 .link__on-sale {
   width: 220px;

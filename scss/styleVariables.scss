@@ -1,0 +1,187 @@
+$color-black: #000;
+$color-white: #fff;
+$color-muted: #f0f0f0;
+$color-text-muted: rgba(0, 0, 0, 0.4);
+
+$font-main: "Satoshi", sans-serif;
+
+$search-width: 577px;
+$search-height: 48px;
+$icon-size: 20px;
+
+$container-max: 1260px;
+$header-max: 1240px;
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+@mixin container($max-width) {
+  max-width: $max-width;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@mixin focus-ring($color: $color-black) {
+  &:focus-visible {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+  @include focus-ring;
+}
+
+ul {
+  list-style: none;
+}
+
+//  Контейнеры 
+.container {
+  @include container($container-max);
+}
+
+//  Promo bar
+.promo-bar {
+  &__container {
+    background-color: $color-black;
+    color: $color-white;
+    @include flex-center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-family: $font-main;
+  }
+
+  &__container a {
+    color: $color-white;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+}
+
+//  Header 
+.header {
+  margin: 0 auto;
+
+  &-container {
+    @include container($header-max);
+    margin: 24px auto;
+    @include flex-center(2px); 
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__actions {
+    height: 24px;
+    width: 62px;
+    @include flex-center(14px);
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+
+    
+    &--actions {
+      background-color: $color-white;
+      width: 68px;
+      height: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    margin: 13px 40px;
+    width: 321px; 
+    height: 22px;
+  }
+}
+
+// навигация
+.nav {
+  ul {
+    display: flex;
+    gap: 24px;
+  }
+
+  a {
+    color: $color-black;
+    font-size: 16px;
+    display: inline-flex;
+    @include focus-ring;
+  }
+
+  li {
+    font-weight: 400;
+    color: $color-black;
+  }
+}
+
+// Search bar 
+.search-bar {
+  &__container {
+    width: $search-width;
+    height: $search-height;
+    @include flex-center;
+  }
+
+  &__img {
+    display: flex;
+    height: 47px;
+    align-items: center;
+
+    img {
+      width: $icon-size;   // было 20.27px — округлил
+      height: $icon-size;
+      opacity: 0.4;        // color на img не работает
+    }
+  }
+
+  // сам инпут — было глобальное input
+  &__input {
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    width: 530px;
+    border-radius: 40px;
+    background-color: $color-muted;
+    @include focus-ring;
+  }
+}
+
+// это утилты  Утилиты подсказка для меня
+.is-hidden {
+  display: none !important;
+}

@@ -1,64 +1,161 @@
-import comments from "../mocks/comments.json";
-
-// Дублируем массив, чтобы переход был плавным без "склейки"
-const doubled = [...comments, ...comments];
-
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-
-let index = 0;
-const visibleCount = 3; // сколько карточек видно
-const cardWidth = 320; // ширина карточки + gap
-
-const carousel = document.getElementById("carousel");
-
-// Отрисовываем ВСЕ карточки (двойной набор)
-function render() {
-  carousel.innerHTML = doubled
-    .map(
-      (c) => `
-        <div class="card">
-            <div class="stars">${"★".repeat(c.score)}</div>
-            <b>${c.name}</b>
-            <p>${c.comment}</p>
-        </div>
-    `,
-    )
-    .join("");
-}
-
-function updatePosition(animate = true) {
-  carousel.style.transition = animate ? "transform 0.4s ease" : "none";
-  carousel.style.transform = `translateX(-${index * cardWidth}px)`;
-}
-
-function next() {
-  index++;
-  updatePosition();
-
-  // Когда дошли до конца первого набора — мгновенно прыгаем в начало
-  if (index >= comments.length) {
-    setTimeout(() => {
-      index = 0;
-      updatePosition(false); // без анимации
-    }, 400); // ждём окончания анимации
-  }
-}
-
-function prev() {
-  if (index <= 0) {
-    // Прыгаем в конец второго набора без анимации
-    index = comments.length;
-    updatePosition(false);
-    // Форсируем reflow, потом анимируем
-    carousel.offsetHeight;
-  }
-  index--;
-  updatePosition();
-}
-
-nextButton.addEventListener("click", next);
-prevButton.addEventListener("click", prev);
-
-render();
-updatePosition(false);
+export const products = [
+  {
+    id: 1,
+    title: "T-SHIRT WITH TAPE DETAILS",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 120,
+    description:
+      "This graphic cloth which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+    image: "./images/blackT-shirt.svg",
+    colors: ["#000000", "#FFFFFF"],
+    lists: ["new"],
+  },
+  {
+    id: 2,
+    title: "SKINNY FIT JEANS",
+    rating: 3.5,
+    stars: "./images/3.5Stars.svg",
+    price: 240,
+    oldPrice: 260,
+    discount: -20,
+    description:
+      "Slim-fit jeans with a clean silhouette. Soft stretch denim for all-day comfort and a sharp everyday look.",
+    image: "./images/skinnyFitJeans.svg",
+    colors: ["#1D4ED8", "#FFFFFF"],
+    lists: ["new", "shop"],
+  },
+  {
+    id: 3,
+    title: "CHECKERED SHIRT",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 180,
+    description:
+      "Classic checkered shirt with a relaxed cut. Easy to layer and suitable for both casual and smart looks.",
+    image: "./images/checkeredShirt.svg",
+    colors: ["#EF4444", "#FFFFFF", "#2563EB"],
+    lists: ["new", "shop"],
+  },
+  {
+    id: 4,
+    title: "SLEEVE STRIPED T-SHIRT",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 130,
+    oldPrice: 160,
+    discount: -30,
+    description:
+      "Soft striped t-shirt with contrast sleeves. Breathable fabric that keeps its shape after washing.",
+    image: "./images/sleeveStripedT-shirt.svg",
+    colors: ["#000000", "#F97316"],
+    lists: ["new", "shop"],
+  },
+  {
+    id: 5,
+    title: "VERTICAL STRIPED SHIRT",
+    rating: 5,
+    stars: "./images/fiveStars.svg",
+    price: 212,
+    oldPrice: 232,
+    discount: -20,
+    description:
+      "Vertical striped shirt with a tailored fit. Lightweight fabric that works from office to weekend.",
+    image: "./images/verticalStripedShirt.svg",
+    colors: ["#16A34A", "#FFFFFF"],
+    lists: ["top", "shop"],
+  },
+  {
+    id: 6,
+    title: "COURAGE GRAPHIC T-SHIRT",
+    rating: 4,
+    stars: "./images/fourStars.svg",
+    price: 145,
+    description:
+      "Graphic t-shirt with a bold print. Soft cotton blend and a regular fit for everyday wear.",
+    image: "./images/couradeT-shirt.svg",
+    colors: ["#000000", "#E5E7EB"],
+    lists: ["top", "shop"],
+  },
+  {
+    id: 7,
+    title: "LOOSE FIT BERMUDA SHORTS",
+    rating: 3,
+    stars: "./images/threeStars.svg",
+    price: 80,
+    description:
+      "Loose Bermuda shorts with a comfortable waistband. Ideal for warm weather and casual outfits.",
+    image: "./images/looseFitBermudaShorts.svg",
+    colors: ["#1F2937", "#D6D3D1"],
+    lists: ["top", "shop"],
+  },
+  {
+    id: 8,
+    title: "FADED SKINNY JEANS",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 210,
+    description:
+      "Faded skinny jeans with a vintage wash. Stretch denim that stays comfortable through the day.",
+    image: "./images/fadedSkinnyJeans.svg",
+    colors: ["#1E3A8A", "#9CA3AF"],
+    lists: ["top"],
+  },
+  {
+    id: 9,
+    title: "Gradient Graphic T-shirt",
+    rating: 3.5,
+    stars: "./images/3.5Stars.svg",
+    price: 145,
+    description:
+      "Gradient graphic t-shirt with a soft print. Lightweight and easy to pair with jeans or shorts.",
+    image: "./images/gradientGraphicT-shirt.svg",
+    colors: ["#6366F1", "#22C55E"],
+    lists: ["shop"],
+  },
+  {
+    id: 10,
+    title: "Polo with Tipping Details",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 180,
+    description:
+      "Classic polo with contrast tipping. Breathable knit that keeps a neat look without extra effort.",
+    image: "./images/poloWithTippingDetails.svg",
+    colors: ["#0F172A", "#F8FAFC"],
+    lists: ["shop"],
+  },
+  {
+    id: 11,
+    title: "Black Striped T-shirt",
+    rating: 5,
+    stars: "./images/fiveStars.svg",
+    price: 120,
+    oldPrice: 150,
+    discount: -30,
+    description:
+      "Black striped t-shirt with a clean graphic. Soft fabric and a regular cut for daily wear.",
+    image: "./images/blackStripedT-shirt.svg",
+    colors: ["#111827", "#F59E0B"],
+    lists: ["shop"],
+  },
+  {
+    id: 12,
+    title: "One Life Graphic T-shirt",
+    rating: 4.5,
+    stars: "./images/starsCart.svg",
+    price: 260,
+    oldPrice: 300,
+    discount: -40,
+    description:
+      "This graphic cloth which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+    image: "./images/greenT-shirtHero.svg",
+    gallery: [
+      "./images/greenT-shirtOne.svg",
+      "./images/greenT-shirtTwo.svg",
+      "./images/greenT-shirtThee.svg",
+    ],
+    colors: ["#31344F", "#314F4A", "#4F4631"],
+    lists: [],
+  },
+];

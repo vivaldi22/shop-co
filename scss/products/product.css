@@ -158,29 +158,50 @@ input {
 }
 .cloth {
   max-width: 1240px;
-  max-height: 530px;
   margin: 36px auto 84px;
 }
 .cloth-twoObject {
   display: flex;
-  margin-left: 16px;
+  gap: 14px;
+  flex-shrink: 0;
 }
 .cloth__container {
-  height: 530px;
   width: 1240px;
   display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 .cloth__container-img {
   width: 152px;
-  height: 530px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 14px;
 }
+.img__transform {
+  width: 152px;
+  height: 167px;
+  object-fit: contain;
+  background-color: #f0eeed;
+  border-radius: 20px;
+  display: block;
+}
 .container__main-img {
-  padding: 0 14px;
+  width: 444px;
+  height: 530px;
+  background-color: #f0eeed;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease;
+}
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .container__main-img:hover {
@@ -191,9 +212,15 @@ input {
   transform: translateY(-5px);
   transition: transform 0.2s ease;
 }
+.container-info {
+  flex: 1;
+  min-width: 0;
+  max-width: 590px;
+}
 .title {
   font-weight: 700;
   font-size: 40px;
+  line-height: 48px;
   color: #000000;
   margin-bottom: 14px;
   font-family: "Integral CF", sans-serif;

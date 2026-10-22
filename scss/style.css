@@ -15,7 +15,7 @@ a {
 ul {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 20px;
 }
 li {
   font-weight: 400;
@@ -262,6 +262,13 @@ input {
   flex-direction: column;
   cursor: pointer;
   transition: transform 0.2s ease;
+}
+
+.product-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
 .article-productCard:hover {
@@ -685,7 +692,7 @@ input {
   }
   /* Hat */
   .header-container {
-    width: 390px;
+    width: 358px;
     margin: 23px 16px;
   }
   .header__menu {
@@ -904,8 +911,6 @@ input {
   .reviews-title {
     max-width: 390px;
     font-size: 32px;
-  }
-  .reviews-titleText {
   }
   .dress-styleCart {
     width: 300px;
