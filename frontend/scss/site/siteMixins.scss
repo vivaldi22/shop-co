@@ -1,0 +1,78 @@
+
+@mixin flex($justify: null, $align: null, $direction: null, $gap: null) {
+  display: flex;
+  @if $justify { justify-content: $justify; }
+  @if $align { align-items: $align; }
+  @if $direction { flex-direction: $direction; }
+  @if $gap { gap: $gap; }
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin card-hover {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  &:hover { transform: translateY(-5px); }
+}
+
+@mixin divider {
+  border-top: 1px solid $border-light;
+  padding-top: 16px;
+  margin-top: 10px;
+}
+
+@mixin price-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin color-dot($bg, $border-width: 1px) {
+  width: 37px;
+  height: 37px;
+  border: $border-width solid $text-faded;
+  background: $bg;
+  border-radius: $r-circle;
+  cursor: pointer;
+}
+
+@mixin size-btn($bg: $gray, $color: $black) {
+  background: $bg;
+  color: $color;
+  border: none;
+  opacity: 60%;
+  font-size: 14px;
+  border-radius: $r-pill;
+  padding: 10px 20px;
+  margin: 0 8px 8px 0;
+}
+
+@mixin page-btn($bg: $white) {
+  border-radius: $r-sm;
+  border: none;
+  background: $bg;
+  width: 40px;
+  height: 40px;
+}
+
+@mixin subscribe-base {
+  max-width: $max;
+  @include flex-between;
+  margin: 50px auto -90px;
+  background: $black;
+  color: $white;
+  border-radius: $r;
+  padding: 44px 64px;
+  position: relative;
+  z-index: 1;
+}
+
+@mixin footer-base {
+  background: $gray;
+  padding: 200px 0 40px;
+  position: relative;
+}

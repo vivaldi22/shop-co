@@ -1,0 +1,864 @@
+@use "siteGlobal" as *;
+@use "siteMixins" as *;
+@use "siteVariaybles" as *;
+
+.promo-bar {
+  &__container {
+    position: relative;
+    background: $black;
+    color: $white;
+    @include flex($justify: center, $align: center);
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-family: $font;
+  }
+
+  &__container a {
+    color: $white;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+}
+
+.header {
+  margin: 0 auto;
+
+  &-container {
+    max-width: $max;
+    margin: 24px auto;
+    @include flex($align: center, $gap: 2px);
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__actions {
+    height: 24px;
+    width: 62px;
+    @include flex($align: center, $gap: 14px);
+  }
+
+  &__actions actions {
+    background: $white;
+    width: 68px;
+    height: 24px;
+    @include flex-between;
+  }
+
+  &__menu {
+    margin: 13px 40px;
+    width: 321px;
+    height: 22px;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  color: $black;
+  font-size: 16px;
+  display: flex;
+}
+
+.search-bar {
+  border-radius: 40px;
+  background: $gray;
+  width: 530px;
+  padding: 0 20px;
+  font-size: 16px;
+
+  &__container {
+    width: 577px;
+    height: 48px;
+  }
+
+  &__img {
+    @include flex($align: center);
+    height: 47px;
+
+    img {
+      width: 20.27px;
+      height: 20.27px;
+      color: $text-muted;
+    }
+  }
+}
+
+.iconNone,
+.menuNone {
+  display: none;
+}
+
+.catalog {
+  @include flex($align: flex-start);
+  margin-bottom: 40px;
+
+  &__list {
+    width: 74%;
+    max-width: 925px;
+    margin: 28px auto 0 20px;
+  }
+
+  &__span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__top {
+    @include flex($justify: space-between);
+    width: 915px;
+    margin-bottom: 16px;
+  }
+
+  &__container {
+    @include flex($align: center);
+  }
+}
+
+.container-filter {
+  display: none;
+}
+
+.filters {
+  min-width: $filter-w;
+  border: 1px solid $border-light;
+  border-radius: $r;
+  padding: 20px 24px;
+  margin: 24px 0 0 auto;
+
+  &__head,
+  &__block,
+  .pages {
+    @include divider;
+  }
+
+  &__head {
+    @include flex($justify: space-between);
+    margin-bottom: 20px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__list p {
+    @include flex($justify: space-between);
+    color: #666;
+    margin-bottom: 16px;
+  }
+
+  &__list img {
+    cursor: pointer;
+  }
+
+  &__block h4 {
+    font: {
+      size: 20px;
+      weight: 700;
+      family: $font;
+    }
+    line-height: 100%;
+  }
+
+  &__block-header {
+    @include flex($justify: space-between);
+    padding-bottom: 20px;
+  }
+
+  &__bar,
+  &__fill {
+    height: 6px;
+    border-radius: 6px;
+  }
+
+  &__bar {
+    background: $border-light;
+    margin-bottom: 10px;
+  }
+
+  &__fill {
+    width: 70%;
+    background: $black;
+    margin-left: 15%;
+  }
+
+  &__nums {
+    @include flex($justify: space-between);
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  &__apply {
+    width: 100%;
+    border-radius: $r;
+    height: 48px;
+    color: $white;
+    background: $black;
+    border: none;
+    margin-top: 20px;
+  }
+
+  &__dot {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+
+    &--on {
+      border: 2px solid $black;
+    }
+  }
+
+  &__size {
+    @include size-btn;
+    &--on {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  &__size-Lareg {
+    @include size-btn($black, $white);
+  }
+}
+
+.prise-slider-wrapper {
+  padding: 0 10px;
+  @include flex($direction: column, $gap: 12px);
+}
+
+.article-prise {
+  @include flex($justify: space-between);
+  height: 27px;
+
+  img {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+  }
+}
+
+.price-renge {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+  }
+
+  &::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: $black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
+  }
+}
+
+.colors-main {
+  width: 237px;
+  height: 137px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__info {
+    width: 247px;
+    @include flex($gap: 12px);
+  }
+}
+
+// Цветовые кружки через @each
+@each $name,
+  $bg
+    in (
+      green: $color-green,
+      red: $color-red,
+      yallow: $color-yellow,
+      oreng: $color-orange,
+      azure: $color-azure,
+      blue: $color-blue,
+      violet: $color-violet,
+      pink: $color-pink
+    )
+{
+  .color-#{$name} {
+    @include color-dot($bg);
+  }
+}
+
+.color-white {
+  @include color-dot($white);
+}
+.color-black {
+  @include color-dot($black, 0);
+}
+
+.card {
+  @include flex($direction: column, $gap: 8px);
+  font-family: $font;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &__rate {
+    display: flex;
+
+    span {
+      padding-left: 4px;
+    }
+  }
+}
+
+.products__list--3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: $r;
+    padding: 20px;
+    @include flex($direction: column, $justify: space-between);
+  }
+}
+
+// Цены и скидки
+.current-price {
+  @include price-text;
+}
+
+.old-price {
+  @include price-text;
+  color: $text-muted;
+  text-decoration: line-through;
+}
+
+.discont-badge {
+  background: $red-bg;
+  color: $red;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: $r-pill;
+}
+
+.pages {
+  @include flex($justify: space-between);
+  width: 935px;
+
+  &__btn__exit,
+  &__btn-entrance {
+    border-radius: $r-sm;
+    width: 110px;
+    height: 36px;
+    gap: 5px;
+    @include flex($align: center, $justify: center);
+    border: 1px solid $border-light;
+    padding: 8px 14px;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__num_three,
+  &__num_eight,
+  &__num {
+    @include page-btn;
+  }
+
+  &__num__one {
+    @include page-btn;
+  }
+
+  &__num {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    &--on {
+      background: $gray;
+    }
+  }
+}
+
+.preview {
+  max-width: 1155px;
+  margin: 0 auto;
+
+  &__crumbs {
+    @include flex($align: center);
+  }
+}
+
+.main {
+  margin: 0 234px;
+}
+
+.home {
+  width: 63px;
+  height: 16px;
+  @include flex($gap: 7px);
+
+  & a {
+    position: relative;
+    top: -1.2px;
+    color: $text-secondary;
+  }
+}
+
+.cart {
+  width: $card-w;
+  height: 413px;
+
+  & img {
+    aspect-ratio: 295 / 298;
+  }
+
+  &__tree {
+    @include flex($gap: 20px);
+    padding-bottom: 20px;
+    width: $card-w;
+    @include card-hover;
+  }
+}
+
+.product-active {
+  @include flex($gap: 20px);
+}
+
+.link-cart {
+  width: $max;
+  border: 1px solid $border;
+  opacity: 60%;
+  margin: 0 auto;
+}
+
+.link__on-sale {
+  width: 220px;
+  border: 1px solid $border;
+  opacity: 60%;
+  margin: 0 10px 10px 0;
+}
+
+.subscribe {
+  @include subscribe-base;
+  top: 750px;
+
+  &-home {
+    @include subscribe-base;
+  }
+
+  &__title {
+    width: 55%;
+    font-size: 40px;
+    line-height: 45px;
+    font-family: $display;
+  }
+
+  &-form {
+    width: 35%;
+    height: 109px;
+  }
+
+  &-text {
+    background: $white;
+    border-radius: $r-pill;
+    height: 48px;
+    margin-bottom: 14px;
+    padding: 12px 10px 14px 52px;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 46px;
+    border-radius: $r;
+    cursor: pointer;
+    background: $white;
+    font-family: $font;
+    border: none;
+  }
+}
+
+.footer {
+  @include footer-base;
+  top: 750px;
+
+  &-home {
+    @include footer-base;
+  }
+
+  &__top,
+  &__bottom {
+    flex-wrap: wrap;
+    @include flex($gap: 46px, $justify: center);
+  }
+
+  &__about {
+    width: 250px;
+    margin-right: 80px;
+
+    h3 {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-col {
+    width: 180px;
+
+    h4 {
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      color: #666;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__bottom p {
+    display: block;
+    color: #666;
+    margin-bottom: 14px;
+  }
+
+  &__social img,
+  &__pays img {
+    margin-right: 4px;
+    padding-top: 10px;
+  }
+
+  &__bottom {
+    margin: 60px 0 0;
+    position: relative;
+    right: 255px;
+  }
+
+  &-text {
+    color: $text-secondary;
+    opacity: 70%;
+    margin: 25px 0 35px;
+  }
+
+  &-col__container {
+    display: flex;
+  }
+
+  &-line {
+    max-width: $max;
+    margin: 50px auto 0;
+    border: 1px solid $border;
+  }
+
+  &__pays {
+    position: relative;
+    bottom: 20px;
+    left: 520px;
+  }
+}
+
+@include mobile {
+  .promo-bar__container {
+    width: 390px;
+    font-size: 12px;
+  }
+
+  .header {
+    &-container {
+      width: 390px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__actions {
+      width: 96px;
+      position: relative;
+      right: 16px;
+    }
+  }
+
+  .search-bar,
+  .search-bar__img {
+    display: none;
+  }
+
+  .menuNone {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  .iconNone {
+    display: flex;
+  }
+
+  .shopC0 {
+    aspect-ratio: 126px / 18px;
+  }
+
+  .link-cart {
+    max-width: 358px;
+    margin: 0 auto;
+  }
+
+  .navigation-info {
+    margin: 24px 16px 0;
+  }
+
+  .Bigtitle {
+    margin: 0 16px;
+  }
+
+  .cart__container {
+    flex-direction: column;
+
+    &-products {
+      width: 358px;
+      height: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  .product {
+    &-img {
+      width: 99px;
+      height: 99px;
+    }
+
+    &-title {
+      font-size: 16px;
+      width: 185px;
+      height: 22px;
+    }
+
+    &-info {
+      font-size: 12px;
+    }
+
+    &-text {
+      font-size: 16px;
+    }
+
+    &__container {
+      width: 318px;
+
+      &-info {
+        width: 185px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  .products-line {
+    margin: 16px 0;
+    max-width: 300px;
+  }
+
+  .corzina-img {
+    width: 15px;
+    height: 16px;
+    position: relative;
+    left: 12px;
+  }
+
+  .num {
+    font-size: 20px;
+    position: relative;
+    top: 22px;
+  }
+
+  .quantily-selector {
+    width: 105px;
+    height: 31px;
+    padding: 7px 13px;
+    position: relative;
+    top: 50px;
+    left: 0;
+
+    &__btn {
+      width: 16px;
+      height: 16px;
+      position: relative;
+      bottom: 2.9px;
+    }
+  }
+
+  .text1 {
+    width: 6px;
+    height: 19px;
+  }
+
+  .price {
+    width: 358px;
+    margin: 0 auto;
+    padding: 20px;
+
+    &__result {
+      width: 318px;
+    }
+
+    &__line {
+      width: 318px;
+    }
+
+    &__btn {
+      width: 318px;
+      height: 54px;
+      font-size: 14px;
+    }
+  }
+
+  .prise {
+    &-title {
+      font-size: 20px;
+      height: 27px;
+    }
+
+    &__span {
+      font-size: 16px;
+    }
+
+    &__numberBig {
+      font-size: 20px;
+    }
+
+    &113 {
+      font-size: 16px;
+    }
+  }
+
+  .container__form {
+    width: 318px;
+    height: 48px;
+    gap: 12px;
+  }
+
+  .input-line {
+    width: 218px;
+    gap: 7px;
+
+    &__input {
+      width: 120px;
+      font-size: 14px;
+      padding: 0;
+    }
+  }
+
+  .input-img {
+    width: 16px;
+    height: 22px;
+  }
+
+  .button_img {
+    width: 15px;
+  }
+
+  .subscribe {
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+      width: 297px;
+      height: 105px;
+      margin: 0 0 20px;
+    }
+
+    &-text {
+      width: 311px;
+      height: 42px;
+      display: flex;
+      padding: 6px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__btn {
+      width: 311px;
+      height: 42px;
+    }
+
+    &-input {
+      font-size: 14px;
+    }
+
+    &-home {
+      padding: 32px 24px 28px 37px;
+      flex-direction: column;
+    }
+
+    &-email {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .footer {
+    &-title {
+      width: 144px;
+      height: 28px;
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+
+    &-text {
+      width: 357px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 14px 0 20px;
+    }
+
+    &__social {
+      width: 144px;
+      height: 28px;
+    }
+
+    &__about {
+      position: relative;
+      right: 16px;
+    }
+
+    &-line {
+      max-width: 358px;
+      margin: 40px auto 16px;
+    }
+
+    &__pays {
+      position: static;
+    }
+
+    &__bottom {
+      position: static;
+      margin: 0;
+    }
+  }
+
+  .footerText {
+    position: static;
+  }
+}

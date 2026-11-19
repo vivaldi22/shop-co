@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-bg;
+  font-family: $font-base;
+  color: $color-text;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+li {
+  font-weight: 400;
+  color: $color-text;
+}
+
+input {
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

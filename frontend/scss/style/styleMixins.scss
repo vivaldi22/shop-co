@@ -1,0 +1,68 @@
+@use "styleVariables" as *;
+
+@mixin container($max: $container-max) {
+  max-width: $max;
+  margin: 0 auto;
+}
+
+@mixin flex($align: center, $justify: flex-start, $gap: 0) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+@mixin pill-button($bg, $color) {
+  border: none;
+  border-radius: $radius-pill;
+  background-color: $bg;
+  color: $color;
+  font-family: $font-base;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+@mixin hover-lift {
+  transition: transform $transition-base;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: color #f2f0f1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+li {
+  font-weight: 400;
+  color: #000000;
+}
+
+input {
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}

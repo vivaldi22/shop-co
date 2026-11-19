@@ -1,0 +1,83 @@
+@mixin flex(
+  $justify: null,
+  $align: null,
+  $direction: null,
+  $gap: null,
+  $wrap: null
+) {
+  display: flex;
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $gap {
+    gap: $gap;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: $max;
+  margin: 0 auto;
+}
+
+@mixin card-border {
+  border: 1px solid $border;
+  border-radius: $r;
+}
+
+@mixin muted($size: 16px, $opacity: 60%) {
+  font: {
+    size: $size;
+    weight: 400;
+  }
+  line-height: 22px;
+  color: $text-secondary;
+  opacity: $opacity;
+}
+
+@mixin pill-btn($bg: $black, $color: $white) {
+  border: none;
+  border-radius: $r-pill;
+  background: $bg;
+  color: $color;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@mixin subscribe-base {
+  max-width: $max;
+  @include flex-between;
+  margin: 50px auto -90px;
+  background: $black;
+  color: $white;
+  border-radius: $r;
+  padding: 44px 64px;
+  position: relative;
+  z-index: 1;
+}
+
+@mixin footer-base {
+  background: $gray;
+  padding: 200px 0 40px;
+  position: relative;
+}

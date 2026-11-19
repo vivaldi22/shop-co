@@ -1,0 +1,47 @@
+/*General resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: color #f2f0f1;
+  font-family: "Satoshi", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+li {
+  font-weight: 400;
+  color: #000000;
+}
+h1 {
+  font-family: "Integral CF", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  width: 259px;
+  height: 48px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+i {
+  color: #00000099;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: Regular;
+  opacity: 60%;
+}
